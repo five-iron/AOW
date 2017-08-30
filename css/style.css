@@ -1,0 +1,636 @@
+body {
+    height: 100%;
+    zoom: 0.25;
+}
+
+#myImage {
+    position: relative;
+    background: url(../img/AOW.jpg) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: auto;
+}
+
+#innerHovercrystalore {
+    position: absolute;
+    top: 545px/**distance from top of image */
+    ;
+    left: 1300px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+
+/*POPUP WINDOW SHHIT*/
+
+#popupdiv {
+    opacity: 0.9;
+    background: gray;
+    width: 800px;
+}
+
+#popupdiv h1 {
+    font-size: 80px;
+}
+
+#popupdiv ul {
+    list-style: none;
+}
+
+#popupdiv h2,
+ul,
+li {
+    font-size: 70;
+}
+
+#innerHovercrystalore #popupdiv {
+    display: none;
+}
+
+#innerHovercrystalore:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverFactory {
+    position: absolute;
+    top: 945px/**distance from top of image */
+    ;
+    left: 1270px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverfactory #popupdiv {
+    display: none;
+}
+
+#innerHoverFactory:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverchanell {
+    position: absolute;
+    top: 1210px/**distance from top of image */
+    ;
+    left: 1500px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverchanell #popupdiv {
+    display: none;
+}
+
+#innerHoverchanell:hover #popupdiv {
+    display: block;
+}
+
+#innerHoveracidlake {
+    position: absolute;
+    top: 840px/**distance from top of image */
+    ;
+    left: 1485px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoveracidlake #popupdiv {
+    display: none;
+}
+
+#innerHoveracidlake:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverpit {
+    position: absolute;
+    top: 628px/**distance from top of image */
+    ;
+    left: 1570px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverpit #popupdiv {
+    display: none;
+}
+
+#innerHoverpit:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverracecourse {
+    position: absolute;
+    top: 470px/**distance from top of image */
+    ;
+    left: 1860px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverracecourse #popupdiv {
+    display: none;
+}
+
+#innerHoverracecourse:hover #popupdiv {
+    display: block;
+}
+
+#innerHovercells {
+    position: absolute;
+    top: 500px/**distance from top of image */
+    ;
+    left: 2220px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHovercells #popupdiv {
+    display: none;
+}
+
+
+#innerHovercells:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverquary {
+    position: absolute;
+    top: 845px/**distance from top of image */
+    ;
+    left: 2078px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverquary #popupdiv {
+    display: none;
+}
+
+#innerHoverquary:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverquay {
+    position: absolute;
+    top: 1185px/**distance from top of image */
+    ;
+    left: 3268px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverquay #popupdiv {
+    display: none;
+}
+
+#innerHoverquay:hover #popupdiv {
+    display: block;
+}
+
+#innerHovermessa {
+    position: absolute;
+    top: 1110px/**distance from top of image */
+    ;
+    left: 1850px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHovermessa #popupdiv {
+    display: none;
+}
+
+#innerHovermessa:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverwaste {
+    position: absolute;
+    top: 1620px/**distance from top of image */
+    ;
+    left: 1575px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverwaste #popupdiv {
+    display: none;
+}
+
+#innerHoverwaste:hover #popupdiv {
+    display: block;
+}
+
+#innerHovercavern {
+    position: absolute;
+    top: 1720px/**distance from top of image */
+    ;
+    left: 1295px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHovercavern #popupdiv {
+    display: none;
+}
+
+#innerHovercavern:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverphantasmagoria {
+    position: absolute;
+    top: 2340px/**distance from top of image */
+    ;
+    left: 1410px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverphantasmagoria #popupdiv {
+    display: none;
+}
+
+#innerHoverphantasmagoria:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverprimordal {
+    position: absolute;
+    top: 2000px/**distance from top of image */
+    ;
+    left: 1550px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverprimordal #popupdiv {
+    display: none;
+}
+
+#innerHoverprimordal:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverpyramid {
+    position: absolute;
+    top: 2600px/**distance from top of image */
+    ;
+    left: 1662px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverpyramid #popupdiv {
+    display: none;
+}
+
+#innerHoverpyramid:hover #popupdiv {
+    display: block;
+}
+
+#innerHovermarshes {
+    position: absolute;
+    top: 2710px/**distance from top of image */
+    ;
+    left: 1356px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHovermarshes #popupdiv {
+    display: none;
+}
+
+#innerHovermarshes:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverjungle {
+    position: absolute;
+    top: 3245px/**distance from top of image */
+    ;
+    left: 1668px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverjungle #popupdiv {
+    display: none;
+}
+
+#innerHoverjungle:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverbeach {
+    position: absolute;
+    top: 3035px/**distance from top of image */
+    ;
+    left: 1831px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverbeach #popupdiv {
+    display: none;
+}
+
+#innerHoverbeach:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverburial {
+    position: absolute;
+    top: 2240px/**distance from top of image */
+    ;
+    left: 1831px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverburial #popupdiv {
+    display: none;
+}
+
+#innerHoverburial:hover #popupdiv {
+    display: block;
+}
+
+#innerHovercanyon {
+    position: absolute;
+    top: 1770px/**distance from top of image */
+    ;
+    left: 1905px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHovercanyon #popupdiv {
+    display: none;
+}
+
+#innerHovercanyon:hover #popupdiv {
+    display: block;
+}
+
+#innerHovervaultofatziri {
+    position: absolute;
+    top: 2508px/**distance from top of image */
+    ;
+    left: 1799px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHovervaultofatziri #popupdiv {
+    display: none;
+}
+
+#innerHovervaultofatziri:hover #popupdiv {
+    display: block;
+}
+
+#innerHovervaalcity {
+    position: absolute;
+    top: 2489px/**distance from top of image */
+    ;
+    left: 2109px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHovervaalcity #popupdiv {
+    display: none;
+}
+
+#innerHovervaalcity:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverarachtomb {
+    position: absolute;
+    top: 2752px/**distance from top of image */
+    ;
+    left: 1997px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverarachtomb #popupdiv {
+    display: none;
+}
+
+#innerHoverarachtomb:hover #popupdiv {
+    display: block;
+}
+
+#innerHovertropical {
+    position: absolute;
+    top: 3040px/**distance from top of image */
+    ;
+    left: 2129px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHovertropical #popupdiv {
+    display: none;
+}
+
+#innerHovertropical:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverreef {
+    position: absolute;
+    top: 3590px/**distance from top of image */
+    ;
+    left: 2140px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+#innerHoverreef #popupdiv {
+    display: none;
+}
+
+#innerHoverreef:hover #popupdiv {
+    display: block;
+}
