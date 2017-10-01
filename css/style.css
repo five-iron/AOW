@@ -1,39 +1,233 @@
-body {
-    height: 100%;
-    zoom: 0.25;
-}
-
-#myImage {
-    position: relative;
-    background: url(../img/AOW.jpg) no-repeat;
+html {
     height: 100%;
     width: 100%;
-    background-size: auto;
 }
 
-#innerHovercrystalore {
+body {
+    font-family: poefont;
+    position: relative;
+    background: url(../img/AOW3.jpg) no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+/*Shaping maps */
+
+.shapingmaps {
     position: absolute;
-    top: 545px/**distance from top of image */
-    ;
-    left: 1300px/**distance from left of image */
-    ;
-    width: 80px;
-    /**region width*/
-    ;
-    height: 80px/**region height*/
-    ;
-    overflow: show;
-    border-radius: 80px;
-    border: 1px solid black;
+    left: 0;
+    top: 1092px;
+}
+
+.shapingmaps table {
+    border-collapse: separate;
+    background: #DDD;
+    @include border-radius(5px);
+    margin: 5px auto;
+    @include box-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+.shapingmaps thead {
+    @include border-radius(5px);
+}
+
+.shapingmaps thead th {
+    font-size: 44px;
+    font-weight: 400;
+    color: black;
+    @include text-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
+    text-align: left;
+    padding: 8px;
+    @include background-image(linear-gradient(#646f7f, #4a5564));
+    border-top: 1px solid #858d99;
+    &:first-child {
+        @include border-top-left-radius(5px);
+    }
+    &:last-child {
+        @include border-top-right-radius(5px);
+    }
+}
+
+.shapingmaps tbody tr td {
+    font-weight: 400;
+    color: #5f6062;
+    font-size: 34px;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.shapingmaps tbody tr:nth-child(2n) {
+    background: #f0f3f5;
+}
+
+.shapingmaps tbody tr:last-child td {
+    border-bottom: none;
+    &:first-child {
+        @include border-bottom-left-radius(5px);
+    }
+    &:last-child {
+        @include border-bottom-right-radius(5px);
+    }
+}
+
+.shapingmaps tbody:hover > tr td {
+    @include opacity(0.5);
+    /* uncomment for blur effect */
+    /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+}
+
+.shapingmaps tbody:hover > tr:hover td {
+    @include text-shadow(none);
+    color: #2d2d2d;
+    @include opacity(1.0);
+}
+
+@font-face {
+    font-family: poefont;
+    src: url(/fonts/fontin-regular.ttf);
+}
+
+
+/*stars collor*/
+
+.fa-star {
+    color: orange;
+}
+
+.fa-star-half {
+    color: orange;
+}
+
+
+/*POP UP BOX STYLE STUFF*/
+
+.itemimageinside {
+    vertical-align: middle;
+    height: 721px;
+    width: 721px;
+    margin-bottom: 40px;
+}
+
+.itemimageinside img {
+    height: 200px;
+}
+
+.itemimageinside {
+    border: 0;
+}
+
+.ItemGen {
+    color: rgb(171, 144, 102);
+    font-family: FontinSmallCaps, "Fontin SmallCapsa", "Helvetica Neue", Helvetica, Arial, ?????, sans-serif;
+    font-weight: 400;
+    float: left;
+    max-height: 600px;
+    width: 300px;
+    margin: 0px;
+    background: rgb(34, 35, 25);
+}
+
+.itemgen tbody {
+    vertical-align: auto;
+    border-color: inherit;
+    height: 700px;
+    width: 300px;
+}
+
+.itemgen tr {
+    vertical-align: auto;
+    border-color: inherit;
+}
+
+.ItemGen td {
+    padding: 10px;
+}
+
+.ItemContainer {
+    position: relative;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+}
+
+.ItemBox {
+    text-align: center;
+    color: #EFEFEF;
+    font-size: 1em;
+    background: url(http://webcdn.pathofexile.com/image/game_ui/hover_background.png);
+}
+
+.ItemContent {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.TitleUniqueBar {
+    background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderUniqueMiddle.png?scale=2) top left repeat-x;
+    position: relative;
+    height: 120px;
+    padding-top: -300px;
+}
+
+.TitleUniqueBarL {
+    background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderUniqueLeft.png?scale=2) top left no-repeat;
+    height: 80px;
+    width: 43px;
+    left: 0;
+    position: absolute;
+}
+
+.TitleUniqueBarR {
+    background-image: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderUniqueRight.png?scale=2);
+    height: 84px;
+    width: 68px;
+    right: -1px;
+    position: absolute;
+}
+
+.FlavourText,
+.TextUnique {
+    color: #af6025;
+}
+
+.ItemName,
+.ItemType {
+    font-size: 60px;
+    position: relative;
+    top: 0px;
+}
+
+.ItemStats,
+.Requirements,
+.Text {
+    display: inline-block;
+    padding: 0 10px;
+    color: #777;
+}
+
+.ItemUniqueSeparator {
+    background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsSeparatorUnique.png?scale=1) center no-repeat;
+    position: relative;
+    height: 7.91px;
+    margin: 1px 0;
 }
 
 
 /*POPUP WINDOW SHHIT*/
 
 #popupdiv {
-    opacity: 0.9;
     background: gray;
     width: 800px;
+    max-height: 900px;
 }
 
 #popupdiv h1 {
@@ -50,6 +244,21 @@ li {
     font-size: 70;
 }
 
+#innerHovercrystalore {
+    position: absolute;
+    top: 532px/**distance from top of image */
+    ;
+    left: 1288px/**distance from left of image */
+    ;
+    width: 80px;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 5px solid blue;
+    z-index: 1;
+}
+
 #innerHovercrystalore #popupdiv {
     display: none;
 }
@@ -60,18 +269,17 @@ li {
 
 #innerHoverFactory {
     position: absolute;
-    top: 945px/**distance from top of image */
+    top: 935px/**distance from top of image */
     ;
-    left: 1270px/**distance from left of image */
+    left: 1259px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 5px solid blue;
+    z-index: 1;
 }
 
 #innerHoverfactory #popupdiv {
@@ -84,18 +292,17 @@ li {
 
 #innerHoverchanell {
     position: absolute;
-    top: 1210px/**distance from top of image */
+    top: 1199px/**distance from top of image */
     ;
-    left: 1500px/**distance from left of image */
+    left: 1486px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 5px solid blue;
+    z-index: 1;
 }
 
 #innerHoverchanell #popupdiv {
@@ -108,18 +315,17 @@ li {
 
 #innerHoveracidlake {
     position: absolute;
-    top: 840px/**distance from top of image */
+    top: 832px/**distance from top of image */
     ;
-    left: 1485px/**distance from left of image */
+    left: 1478px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 5px solid blue;
+    z-index: 1;
 }
 
 #innerHoveracidlake #popupdiv {
@@ -132,18 +338,17 @@ li {
 
 #innerHoverpit {
     position: absolute;
-    top: 628px/**distance from top of image */
+    top: 621px/**distance from top of image */
     ;
-    left: 1570px/**distance from left of image */
+    left: 1557px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 5px solid blue;
+    z-index: 1;
 }
 
 #innerHoverpit #popupdiv {
@@ -156,18 +361,17 @@ li {
 
 #innerHoverracecourse {
     position: absolute;
-    top: 470px/**distance from top of image */
+    top: 461px/**distance from top of image */
     ;
-    left: 1860px/**distance from left of image */
+    left: 1852px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 5px solid yellow;
+    z-index: 1;
 }
 
 #innerHoverracecourse #popupdiv {
@@ -180,43 +384,64 @@ li {
 
 #innerHovercells {
     position: absolute;
-    top: 500px/**distance from top of image */
+    top: 492px/**distance from top of image */
     ;
-    left: 2220px/**distance from left of image */
+    left: 2207px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 5px solid yellow;
+    z-index: 10;
+    z-index: 1;
 }
 
 #innerHovercells #popupdiv {
     display: none;
 }
 
-
 #innerHovercells:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverArachnidNest {
+    position: absolute;
+    top: 670px/**distance from top of image */
+    ;
+    left: 2880px/**distance from left of image */
+    ;
+    width: 80px;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 5px solid yellow;
+    z-index: 1;
+}
+
+#innerHoverArachnidNest #popupdiv {
+    display: none;
+}
+
+#innerHoverArachnidNest:hover #popupdiv {
     display: block;
 }
 
 #innerHoverquary {
     position: absolute;
-    top: 845px/**distance from top of image */
+    top: 829px/**distance from top of image */
     ;
-    left: 2078px/**distance from left of image */
+    left: 2068px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 5px solid yellow;
+    z-index: 1;
 }
 
 #innerHoverquary #popupdiv {
@@ -229,18 +454,17 @@ li {
 
 #innerHoverquay {
     position: absolute;
-    top: 1185px/**distance from top of image */
+    top: 3495px/**distance from top of image */
     ;
-    left: 3268px/**distance from left of image */
+    left: 2748px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 6px solid yellow;
+    z-index: 10;
 }
 
 #innerHoverquay #popupdiv {
@@ -253,18 +477,17 @@ li {
 
 #innerHovermessa {
     position: absolute;
-    top: 1110px/**distance from top of image */
+    top: 1100px/**distance from top of image */
     ;
-    left: 1850px/**distance from left of image */
+    left: 1841px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 5px solid blue;
+    z-index: 10;
 }
 
 #innerHovermessa #popupdiv {
@@ -277,18 +500,17 @@ li {
 
 #innerHoverwaste {
     position: absolute;
-    top: 1620px/**distance from top of image */
+    top: 1605px/**distance from top of image */
     ;
-    left: 1575px/**distance from left of image */
+    left: 1566px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 6px solid blue;
+    z-index: 10;
 }
 
 #innerHoverwaste #popupdiv {
@@ -301,18 +523,17 @@ li {
 
 #innerHovercavern {
     position: absolute;
-    top: 1720px/**distance from top of image */
+    top: 1708px/**distance from top of image */
     ;
-    left: 1295px/**distance from left of image */
+    left: 1280px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 6px solid blue;
+    z-index: 10;
 }
 
 #innerHovercavern #popupdiv {
@@ -325,18 +546,17 @@ li {
 
 #innerHoverphantasmagoria {
     position: absolute;
-    top: 2340px/**distance from top of image */
+    top: 2334px/**distance from top of image */
     ;
-    left: 1410px/**distance from left of image */
+    left: 1404px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 6px solid blue;
+    z-index: 10;
 }
 
 #innerHoverphantasmagoria #popupdiv {
@@ -349,18 +569,17 @@ li {
 
 #innerHoverprimordal {
     position: absolute;
-    top: 2000px/**distance from top of image */
+    top: 1992px/**distance from top of image */
     ;
-    left: 1550px/**distance from left of image */
+    left: 1536px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+    border: 6px solid blue;
+    z-index: 10;
 }
 
 #innerHoverprimordal #popupdiv {
@@ -373,18 +592,17 @@ li {
 
 #innerHoverpyramid {
     position: absolute;
-    top: 2600px/**distance from top of image */
+    top: 2587px/**distance from top of image */
     ;
-    left: 1662px/**distance from left of image */
+    left: 1660px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHoverpyramid #popupdiv {
@@ -397,18 +615,17 @@ li {
 
 #innerHovermarshes {
     position: absolute;
-    top: 2710px/**distance from top of image */
+    top: 2706px/**distance from top of image */
     ;
-    left: 1356px/**distance from left of image */
+    left: 1350px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHovermarshes #popupdiv {
@@ -433,6 +650,7 @@ li {
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHoverjungle #popupdiv {
@@ -457,6 +675,7 @@ li {
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHoverbeach #popupdiv {
@@ -469,18 +688,17 @@ li {
 
 #innerHoverburial {
     position: absolute;
-    top: 2240px/**distance from top of image */
+    top: 2235px/**distance from top of image */
     ;
-    left: 1831px/**distance from left of image */
+    left: 1825px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHoverburial #popupdiv {
@@ -493,18 +711,17 @@ li {
 
 #innerHovercanyon {
     position: absolute;
-    top: 1770px/**distance from top of image */
+    top: 1764px/**distance from top of image */
     ;
-    left: 1905px/**distance from left of image */
+    left: 1901px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHovercanyon #popupdiv {
@@ -529,6 +746,7 @@ li {
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHovervaultofatziri #popupdiv {
@@ -541,18 +759,17 @@ li {
 
 #innerHovervaalcity {
     position: absolute;
-    top: 2489px/**distance from top of image */
+    top: 2488px/**distance from top of image */
     ;
-    left: 2109px/**distance from left of image */
+    left: 2104px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHovervaalcity #popupdiv {
@@ -565,18 +782,17 @@ li {
 
 #innerHoverarachtomb {
     position: absolute;
-    top: 2752px/**distance from top of image */
+    top: 2741px/**distance from top of image */
     ;
-    left: 1997px/**distance from left of image */
+    left: 1988px/**distance from left of image */
     ;
     width: 80px;
-    /**region width*/
-    ;
     height: 80px/**region height*/
     ;
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHoverarachtomb #popupdiv {
@@ -601,6 +817,7 @@ li {
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHovertropical #popupdiv {
@@ -625,6 +842,7 @@ li {
     overflow: show;
     border-radius: 80px;
     border: 1px solid black;
+    z-index: 10;
 }
 
 #innerHoverreef #popupdiv {
@@ -632,5 +850,907 @@ li {
 }
 
 #innerHoverreef:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverAshenWood {
+    position: absolute;
+    top: 664px/**distance from top of image */
+    ;
+    left: 2650px/**distance from left of image */
+    ;
+    width: 80px;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 5px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverAshenWood #popupdiv {
+    display: none;
+}
+
+#innerHoverAshenWood:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverShore {
+    position: absolute;
+    top: 2640px/**distance from top of image */
+    ;
+    left: 2374px/**distance from left of image */
+    ;
+    width: 80px;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverShore #popupdiv {
+    display: none;
+}
+
+#innerHoverShore:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverAtoll {
+    position: absolute;
+    top: 2418px/**distance from top of image */
+    ;
+    left: 5346px/**distance from left of image */
+    ;
+    width: 80px;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid black;
+    z-index: 10;
+}
+
+#innerHoverAtoll #popupdiv {
+    display: none;
+}
+
+#innerHoverAtoll:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverArcade {
+    position: absolute;
+    top: 3210/**distance from top of image */
+    ;
+    left: 6275px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 2px solid blue;
+    z-index: 10;
+}
+
+#innerHoverArcade #popupdiv {
+    display: none;
+}
+
+#innerHoverArcade:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverGhetto {
+    position: absolute;
+    top: 3100/**distance from top of image */
+    ;
+    left: 5980px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 2px solid blue;
+    z-index: 10;
+}
+
+#innerHoverGhetto #popupdiv {
+    display: none;
+}
+
+#innerHoverGhetto:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverSewer {
+    position: absolute;
+    top: 3350/**distance from top of image */
+    ;
+    left: 5870px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 2px solid blue;
+    z-index: 10;
+}
+
+#innerHoverSewer #popupdiv {
+    display: none;
+}
+
+#innerHoverSewer:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverGraveyard {
+    position: absolute;
+    top: 3130px/**distance from top of image */
+    ;
+    left: 5530px/**distance from left of image */
+    ;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 2px solid blue;
+    z-index: 10;
+}
+
+#innerHoverGraveyard #popupdiv {
+    display: none;
+}
+
+#innerHoverGraveyard:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverTower {
+    position: absolute;
+    top: 2451px/**distance from top of image */
+    ;
+    left: 5941px;
+    width: 80px;
+    /**region width*/
+    ;
+    height: 80px/**region height*/
+    ;
+    overflow: show;
+    border-radius: 80px;
+    border: 2px solid blue;
+    z-index: 10;
+}
+
+#innerHoverTower #popupdiv {
+    display: none;
+}
+
+#innerHoverTower:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverAcademy {
+    position: absolute;
+    top: 2909px;
+    left: 6267px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 2px solid blue;
+    z-index: 10;
+}
+
+#innerHoverAcademy #popupdiv {
+    display: none;
+}
+
+#innerHoverAcademy:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverSpiderLair {
+    position: absolute;
+    top: 1978px;
+    left: 6198px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 2px solid blue;
+    z-index: 10;
+}
+
+#innerHoverSpiderLair #popupdiv {
+    display: none;
+}
+
+#innerHoverSpiderLair:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverSpiderForest {
+    position: absolute;
+    top: 2030px;
+    left: 6003px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverSpiderForest #popupdiv {
+    display: none;
+}
+
+#innerHoverSpiderForest:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverMudGeyser {
+    position: absolute;
+    top: 2052px;
+    left: 5716px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverMudGeyser #popupdiv {
+    display: none;
+}
+
+#innerHoverMudGeyser:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverPier {
+    position: absolute;
+    top: 2423px;
+    left: 5605px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverPier #popupdiv {
+    display: none;
+}
+
+#innerHoverPier:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverRamparts {
+    position: absolute;
+    top: 1805px;
+    left: 5425px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverRamparts #popupdiv {
+    display: none;
+}
+
+#innerHoverRamparts:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverPeninsula {
+    position: absolute;
+    top: 1430px;
+    left: 5535px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid Blue;
+    z-index: 10;
+}
+
+#innerHoverPeninsula #popupdiv {
+    display: none;
+}
+
+#innerHoverPeninsula:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverWharf {
+    position: absolute;
+    top: 1255px;
+    left: 5135px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+}
+
+#innerHoverWharf #popupdiv {
+    display: none;
+}
+
+#innerHoverWharf:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverStrand {
+    position: absolute;
+    top: 1030px;
+    left: 5355px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+}
+
+#innerHoverStrand #popupdiv {
+    display: none;
+}
+
+#innerHoverStrand:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverCastleruins {
+    position: absolute;
+    top: 728px;
+    left: 5099px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+}
+
+#innerHoverCastleruins #popupdiv {
+    display: none;
+}
+
+#innerHoverCastleruins:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverDunes {
+    position: absolute;
+    top: 1030px;
+    left: 5679px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid blue;
+}
+
+#innerHoverDunes #popupdiv {
+    display: none;
+}
+
+#innerHoverDunes:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverVilla {
+    position: absolute;
+    top: 1391px;
+    left: 5818px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid blue;
+}
+
+#innerHoverVilla #popupdiv {
+    display: none;
+}
+
+#innerHoverVilla:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverDungeon {
+    position: absolute;
+    top: 1215px;
+    left: 6148px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid blue;
+}
+
+#innerHoverDungeon #popupdiv {
+    display: none;
+}
+
+#innerHoverDungeon:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverThicket {
+    position: absolute;
+    top: 1750px;
+    left: 6138px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+}
+
+#innerHoverThicket #popupdiv {
+    display: none;
+}
+
+#innerHoverThicket:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverGroto {
+    position: absolute;
+    top: 1410px;
+    left: 6213px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+}
+
+#innerHoverGroto #popupdiv {
+    display: none;
+}
+
+#innerHoverGroto:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverAridlake {
+    position: absolute;
+    top: 983px;
+    left: 6044px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+}
+
+#innerHoverAridlake #popupdiv {
+    display: none;
+}
+
+#innerHoverAridlake:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverOasis {
+    position: absolute;
+    top: 789px;
+    left: 6092px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+}
+
+#innerHoverOasis #popupdiv {
+    display: none;
+}
+
+#innerHoverOasis:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverDesert {
+    position: absolute;
+    top: 555px;
+    left: 6129px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+}
+
+#innerHoverDesert #popupdiv {
+    display: none;
+}
+
+#innerHoverDesert:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverColonnade {
+    position: absolute;
+    top: 2800px;
+    left: 5503px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverColonnade #popupdiv {
+    display: none;
+}
+
+#innerHoverColonnade:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverArena {
+    position: absolute;
+    top: 3083px;
+    left: 5325px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverArena #popupdiv {
+    display: none;
+}
+
+#innerHoverArena:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverOrchard {
+    position: absolute;
+    top: 3360px;
+    left: 5345px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverOrchard #popupdiv {
+    display: none;
+}
+
+#innerHoverOrchard:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverTemple {
+    position: absolute;
+    top: 3018px;
+    left: 4875px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverTemple #popupdiv {
+    display: none;
+}
+
+#innerHoverTemple:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverMalformation {
+    position: absolute;
+    top: 3481px;
+    left: 4784px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverMalformation #popupdiv {
+    display: none;
+}
+
+#innerHoverMalformation:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverExcavation {
+    position: absolute;
+    top: 3258px;
+    left: 4459px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverExcavation #popupdiv {
+    display: none;
+}
+
+#innerHoverExcavation:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverNecropolis {
+    position: absolute;
+    top: 3009px;
+    left: 4529px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverNecropolis #popupdiv {
+    display: none;
+}
+
+#innerHoverNecropolis:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverLair {
+    position: absolute;
+    top: 2700px;
+    left: 4718px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverLair #popupdiv {
+    display: none;
+}
+
+#innerHoverLair:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverMineralPools {
+    position: absolute;
+    top: 2400px;
+    left: 4458px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverMineralPools #popupdiv {
+    display: none;
+}
+
+#innerHoverMineralPools:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverAbyss {
+    position: absolute;
+    top: 2740px;
+    left: 4328px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverAbyss #popupdiv {
+    display: none;
+}
+
+#innerHoverShrine:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverShrine {
+    position: absolute;
+    top: 3056px;
+    left: 4024px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverShrine #popupdiv {
+    display: none;
+}
+
+#innerHoverShrine:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverGorge {
+    position: absolute;
+    top: 3260px;
+    left: 4021px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverGorge #popupdiv {
+    display: none;
+}
+
+#innerHoverGorge:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverVault {
+    position: absolute;
+    top: 3200px;
+    left: 3470px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverVault #popupdiv {
+    display: none;
+}
+
+#innerHoverVault:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverUndergroundSea {
+    position: absolute;
+    top: 3368px;
+    left: 3589px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverUndergroundSea #popupdiv {
+    display: none;
+}
+
+#innerHoverUndergroundSea:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverUndergroundRiver {
+    position: absolute;
+    top: 3620px;
+    left: 2982px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverUndergroundRiver #popupdiv {
+    display: none;
+}
+
+#innerHoverUndergroundRiver:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverCoves {
+    position: absolute;
+    top: 3041px;
+    left: 2452px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverCoves #popupdiv {
+    display: none;
+}
+
+#innerHoverCoves:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverPrecinct {
+    position: absolute;
+    top: 3202px;
+    left: 2766px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverPrecinct #popupdiv {
+    display: none;
+}
+
+#innerHoverPrecinct:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverIvoryTemple {
+    position: absolute;
+    top: 2825px;
+    left: 2681px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverIvoryTemple #popupdiv {
+    display: none;
+}
+
+#innerHoverIvoryTemple:hover #popupdiv {
     display: block;
 }

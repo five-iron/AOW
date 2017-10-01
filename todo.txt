@@ -1,0 +1,6 @@
+- Table with multiply bosses for use of Vaal orbs
+- Add all maps
+- Change BG for BG with map runes
+- Add boss images for map window
+- Hover on Divination cards
+
