@@ -3,4 +3,5 @@
 - Change BG for BG with map runes
 - Add boss images for map window
 - Hover on Divination cards
+- Guardian and shaper maps Window with tactics and stuff
 
