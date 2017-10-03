@@ -1,8 +1,6 @@
 html {
     height: 100%;
     width: 100%;
-	
-	
 }
 
 body {
@@ -2294,5 +2292,225 @@ li {
 }
 
 #innerHoverCore:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverCrypt {
+    position: absolute;
+    top: 935px;
+    left: 4096px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverCrypt #popupdiv {
+    display: none;
+}
+
+#innerHoverCrypt:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverCemetery {
+    position: absolute;
+    top: 864px;
+    left: 4442px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverCemetery #popupdiv {
+    display: none;
+}
+
+#innerHoverCemetery:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverBog {
+    position: absolute;
+    top: 544px;
+    left: 4437px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverBog #popupdiv {
+    display: none;
+}
+
+#innerHoverBog:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverArsenal {
+    position: absolute;
+    top: 1179px;
+    left: 4287px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverArsenal #popupdiv {
+    display: none;
+}
+
+#innerHoverArsenal:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverChateau {
+    position: absolute;
+    top: 1169px;
+    left: 4793px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverChateau #popupdiv {
+    display: none;
+}
+
+#innerHoverChateau:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverEstuary {
+    position: absolute;
+    top: 1796px;
+    left: 4957px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverEstuary #popupdiv {
+    display: none;
+}
+
+#innerHoverEstuary:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverBeacon {
+    position: absolute;
+    top: 2105px;
+    left: 5248px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverBeacon #popupdiv {
+    display: none;
+}
+
+#innerHoverBeacon:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverOvergrownShrine {
+    position: absolute;
+    top: 936px;
+    left: 2908px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverOvergrownShrine #popupdiv {
+    display: none;
+}
+
+#innerHoverOvergrownShrine:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverActon {
+    position: absolute;
+    top: 886px;
+    left: 2798px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverActon #popupdiv {
+    display: none;
+}
+
+#innerHoverActon:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverHallofGrandmasters {
+    position: absolute;
+    top: 1038px;
+    left: 3565px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverHallofGrandmasters #popupdiv {
+    display: none;
+}
+
+#innerHoverHallofGrandmasters:hover #popupdiv {
+    display: block;
+}
+
+#innerHoverPerandusManor {
+    position: absolute;
+    top: 1276px;
+    left: 4885px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+    border: 6px solid yellow;
+    z-index: 10;
+}
+
+#innerHoverPerandusManor #popupdiv {
+    display: none;
+}
+
+#innerHoverPerandusManor:hover #popupdiv {
     display: block;
 }
