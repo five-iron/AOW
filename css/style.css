@@ -255,7 +255,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid blue;
+
     z-index: 1;
 }
 
@@ -278,7 +278,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid blue;
+
     z-index: 1;
 }
 
@@ -301,7 +301,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid blue;
+
     z-index: 1;
 }
 
@@ -324,7 +324,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid blue;
+
     z-index: 1;
 }
 
@@ -347,7 +347,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid blue;
+
     z-index: 1;
 }
 
@@ -370,7 +370,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid yellow;
+
     z-index: 1;
 }
 
@@ -393,9 +393,9 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid yellow;
+
     z-index: 10;
-    z-index: 1;
+
 }
 
 #innerHovercells #popupdiv {
@@ -417,7 +417,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid yellow;
+
     z-index: 1;
 }
 
@@ -440,7 +440,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid yellow;
+
     z-index: 1;
 }
 
@@ -463,7 +463,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -486,7 +486,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid blue;
+
     z-index: 10;
 }
 
@@ -509,7 +509,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid blue;
+
     z-index: 10;
 }
 
@@ -532,7 +532,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid blue;
+
     z-index: 10;
 }
 
@@ -555,7 +555,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid blue;
+
     z-index: 10;
 }
 
@@ -578,7 +578,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid blue;
+
     z-index: 10;
 }
 
@@ -601,7 +601,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -624,7 +624,6 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
     z-index: 10;
 }
 
@@ -649,7 +648,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -674,7 +673,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -697,7 +696,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -720,7 +719,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -745,7 +744,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -768,7 +767,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -791,7 +790,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -816,7 +815,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -841,7 +840,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 1px solid black;
+
     z-index: 10;
 }
 
@@ -864,7 +863,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 5px solid yellow;
+
     z-index: 10;
 }
 
@@ -887,7 +886,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -910,7 +909,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid black;
+
     z-index: 10;
 }
 
@@ -935,7 +934,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 2px solid blue;
+
     z-index: 10;
 }
 
@@ -960,7 +959,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 2px solid blue;
+
     z-index: 10;
 }
 
@@ -985,7 +984,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 2px solid blue;
+
     z-index: 10;
 }
 
@@ -1010,7 +1009,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 2px solid blue;
+
     z-index: 10;
 }
 
@@ -1034,7 +1033,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    border: 2px solid blue;
+
     z-index: 10;
 }
 
@@ -1054,7 +1053,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 2px solid blue;
+
     z-index: 10;
 }
 
@@ -1074,7 +1073,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 2px solid blue;
+
     z-index: 10;
 }
 
@@ -1094,7 +1093,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1114,7 +1113,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1134,7 +1133,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1154,7 +1153,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1174,7 +1173,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid Blue;
+
     z-index: 10;
 }
 
@@ -1194,7 +1193,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
 }
 
 #innerHoverWharf #popupdiv {
@@ -1213,7 +1212,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
 }
 
 #innerHoverStrand #popupdiv {
@@ -1232,7 +1231,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
 }
 
 #innerHoverCastleruins #popupdiv {
@@ -1251,7 +1250,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid blue;
+
 }
 
 #innerHoverDunes #popupdiv {
@@ -1270,7 +1269,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid blue;
+
 }
 
 #innerHoverVilla #popupdiv {
@@ -1289,7 +1288,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid blue;
+
 }
 
 #innerHoverDungeon #popupdiv {
@@ -1308,7 +1307,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
 }
 
 #innerHoverThicket #popupdiv {
@@ -1327,7 +1326,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
 }
 
 #innerHoverGroto #popupdiv {
@@ -1346,7 +1345,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
 }
 
 #innerHoverAridlake #popupdiv {
@@ -1365,7 +1364,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
 }
 
 #innerHoverOasis #popupdiv {
@@ -1384,7 +1383,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
 }
 
 #innerHoverDesert #popupdiv {
@@ -1403,7 +1402,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1423,7 +1422,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1443,7 +1442,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1463,7 +1462,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1483,7 +1482,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1503,7 +1502,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1523,7 +1522,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1543,7 +1542,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1563,7 +1562,6 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
     z-index: 10;
 }
 
@@ -1583,7 +1581,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1603,7 +1601,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1623,7 +1621,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1643,7 +1641,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1663,7 +1661,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1683,7 +1681,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1703,7 +1701,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1723,7 +1721,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1743,7 +1741,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1763,7 +1761,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1783,7 +1781,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1803,7 +1801,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1823,7 +1821,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1843,7 +1841,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1863,7 +1861,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1883,7 +1881,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1903,7 +1901,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1923,7 +1921,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1943,7 +1941,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1963,7 +1961,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -1983,7 +1981,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2003,7 +2001,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2023,7 +2021,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2043,7 +2041,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2063,7 +2061,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2083,7 +2081,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2103,7 +2101,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2123,7 +2121,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2143,7 +2141,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2163,7 +2161,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2183,7 +2181,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2203,7 +2201,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2223,7 +2221,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2243,7 +2241,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2263,7 +2261,6 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
     z-index: 10;
 }
 
@@ -2283,7 +2280,6 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
     z-index: 10;
 }
 
@@ -2303,7 +2299,6 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
     z-index: 10;
 }
 
@@ -2323,7 +2318,6 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
     z-index: 10;
 }
 
@@ -2343,7 +2337,6 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
     z-index: 10;
 }
 
@@ -2363,7 +2356,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2383,7 +2376,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2403,7 +2396,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2423,7 +2416,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2443,7 +2436,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2463,7 +2456,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2483,7 +2476,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
+
     z-index: 10;
 }
 
@@ -2503,7 +2496,6 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    border: 6px solid yellow;
     z-index: 10;
 }
 
