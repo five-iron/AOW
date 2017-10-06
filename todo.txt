@@ -4,4 +4,5 @@
 - Add boss images for map window
 - Hover on Divination cards
 - Guardian and shaper maps Window with tactics and stuff
+- add DIvine vessel maps
 

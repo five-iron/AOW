@@ -6,7 +6,7 @@ html {
 body {
     font-family: poefont;
     position: relative;
-    background: url(../img/AOW3.jpg) no-repeat;
+    background: #000 url(../img/AOW3.jpg) no-repeat;
     height: 100%;
     width: 100%;
 }
@@ -57,8 +57,8 @@ a {
 .shapingmaps tbody tr td {
     font-weight: 400;
     color: #5f6062;
-    font-size: 34px;
-    padding: 10px;
+    font-size: 31px;
+    padding: 8px;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -91,7 +91,7 @@ a {
 
 @font-face {
     font-family: poefont;
-    src: url(/fonts/fontin-regular.ttf);
+    src: url(../fonts/fontin-regular.ttf);
 }
 
 
@@ -2505,4 +2505,26 @@ li {
 
 #innerHoverPerandusManor:hover #popupdiv {
     display: block;
+}
+
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 260px;
+    height: 50px;
+    width: 100%;
+
+}
+
+.footer h1 {
+    position: relative;
+    padding-left: 80px;
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+.footer img {
+    position: absolute;
+    top: -108px;
+    left: 872px;
 }
