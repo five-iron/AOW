@@ -13,7 +13,8 @@ body {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: antiquewhite;
+
 }
 
 
@@ -22,7 +23,7 @@ a {
 .shapingmaps {
     position: absolute;
     left: 0;
-    top: 1092px;
+    top: 3000px;
 }
 
 .shapingmaps table {
@@ -113,12 +114,18 @@ a {
     height: 721px;
     width: 721px;
     margin-bottom: 40px;
+
 }
 
 .itemimageinside img {
     height: 200px;
 }
 
+
+/* NO IMAGES FROM NEGRICH*/
+.itemimage {
+    display:none; 
+}
 .itemimageinside {
     border: 0;
 }
@@ -256,7 +263,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 1;
+    
 }
 
 #innerHovercrystalore #popupdiv {
@@ -279,7 +286,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 1;
+    
 }
 
 #innerHoverfactory #popupdiv {
@@ -302,7 +309,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 1;
+    
 }
 
 #innerHoverchanell #popupdiv {
@@ -325,7 +332,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 1;
+    
 }
 
 #innerHoveracidlake #popupdiv {
@@ -348,7 +355,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 1;
+    
 }
 
 #innerHoverpit #popupdiv {
@@ -371,7 +378,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 1;
+    
 }
 
 #innerHoverracecourse #popupdiv {
@@ -394,7 +401,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 
 }
 
@@ -418,7 +425,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 1;
+    
 }
 
 #innerHoverArachnidNest #popupdiv {
@@ -441,7 +448,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 1;
+    
 }
 
 #innerHoverquary #popupdiv {
@@ -464,7 +471,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverquay #popupdiv {
@@ -487,7 +494,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHovermessa #popupdiv {
@@ -510,7 +517,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverwaste #popupdiv {
@@ -533,7 +540,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHovercavern #popupdiv {
@@ -556,7 +563,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverphantasmagoria #popupdiv {
@@ -579,7 +586,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverprimordal #popupdiv {
@@ -602,7 +609,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverpyramid #popupdiv {
@@ -624,7 +631,7 @@ li {
     ;
     overflow: show;
     border-radius: 80px;
-    z-index: 10;
+    ;
 }
 
 #innerHovermarshes #popupdiv {
@@ -649,7 +656,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverjungle #popupdiv {
@@ -674,7 +681,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverbeach #popupdiv {
@@ -697,7 +704,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverburial #popupdiv {
@@ -720,7 +727,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHovercanyon #popupdiv {
@@ -745,7 +752,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHovervaultofatziri #popupdiv {
@@ -768,7 +775,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHovervaalcity #popupdiv {
@@ -791,7 +798,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverarachtomb #popupdiv {
@@ -816,7 +823,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHovertropical #popupdiv {
@@ -841,7 +848,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverreef #popupdiv {
@@ -864,7 +871,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverAshenWood #popupdiv {
@@ -887,7 +894,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverShore #popupdiv {
@@ -910,7 +917,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverAtoll #popupdiv {
@@ -935,7 +942,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverArcade #popupdiv {
@@ -960,7 +967,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverGhetto #popupdiv {
@@ -985,7 +992,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverSewer #popupdiv {
@@ -1010,7 +1017,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverGraveyard #popupdiv {
@@ -1034,7 +1041,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverTower #popupdiv {
@@ -1054,7 +1061,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverAcademy #popupdiv {
@@ -1074,7 +1081,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverSpiderLair #popupdiv {
@@ -1094,7 +1101,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverSpiderForest #popupdiv {
@@ -1114,7 +1121,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverMudGeyser #popupdiv {
@@ -1134,7 +1141,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverPier #popupdiv {
@@ -1154,7 +1161,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverRamparts #popupdiv {
@@ -1174,7 +1181,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverPeninsula #popupdiv {
@@ -1403,7 +1410,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverColonnade #popupdiv {
@@ -1423,7 +1430,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverArena #popupdiv {
@@ -1443,7 +1450,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverOrchard #popupdiv {
@@ -1463,7 +1470,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverTemple #popupdiv {
@@ -1483,7 +1490,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverMalformation #popupdiv {
@@ -1503,7 +1510,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverExcavation #popupdiv {
@@ -1523,7 +1530,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverNecropolis #popupdiv {
@@ -1543,7 +1550,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverLair #popupdiv {
@@ -1562,7 +1569,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    z-index: 10;
+    ;
 }
 
 #innerHoverMineralPools #popupdiv {
@@ -1582,7 +1589,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverAbyss #popupdiv {
@@ -1602,7 +1609,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverShrine #popupdiv {
@@ -1622,7 +1629,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverGorge #popupdiv {
@@ -1642,7 +1649,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverVault #popupdiv {
@@ -1662,7 +1669,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverUndergroundSea #popupdiv {
@@ -1682,7 +1689,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverUndergroundRiver #popupdiv {
@@ -1702,7 +1709,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverCoves #popupdiv {
@@ -1722,7 +1729,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverPrecinct #popupdiv {
@@ -1742,7 +1749,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverIvoryTemple #popupdiv {
@@ -1762,7 +1769,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverPlaza #popupdiv {
@@ -1782,7 +1789,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverMaze #popupdiv {
@@ -1802,7 +1809,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverColosseum #popupdiv {
@@ -1822,7 +1829,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverScriptorium #popupdiv {
@@ -1842,7 +1849,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverPlateau #popupdiv {
@@ -1862,7 +1869,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverResidence #popupdiv {
@@ -1882,7 +1889,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverTortureChamber #popupdiv {
@@ -1902,7 +1909,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverCatacombs #popupdiv {
@@ -1922,7 +1929,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverWaterways #popupdiv {
@@ -1942,7 +1949,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverSprings #popupdiv {
@@ -1962,7 +1969,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverOvergrownRuin #popupdiv {
@@ -1982,7 +1989,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverPalace #popupdiv {
@@ -2002,7 +2009,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverDarkForest #popupdiv {
@@ -2022,7 +2029,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverHighGarden #popupdiv {
@@ -2042,7 +2049,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverShipyard #popupdiv {
@@ -2062,7 +2069,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverBazaar #popupdiv {
@@ -2082,7 +2089,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverTerrace #popupdiv {
@@ -2102,7 +2109,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverArmoury #popupdiv {
@@ -2122,7 +2129,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverPromenade #popupdiv {
@@ -2142,7 +2149,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverBarrows #popupdiv {
@@ -2162,7 +2169,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverMuseum #popupdiv {
@@ -2182,7 +2189,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverCourtyard #popupdiv {
@@ -2202,7 +2209,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverWasteland #popupdiv {
@@ -2222,7 +2229,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverCrematorium #popupdiv {
@@ -2242,7 +2249,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverSulphurWastes #popupdiv {
@@ -2261,7 +2268,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    z-index: 10;
+    ;
 }
 
 #innerHoverVolcano #popupdiv {
@@ -2280,7 +2287,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    z-index: 10;
+    ;
 }
 
 #innerHoverCore #popupdiv {
@@ -2299,7 +2306,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    z-index: 10;
+    ;
 }
 
 #innerHoverCrypt #popupdiv {
@@ -2318,7 +2325,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    z-index: 10;
+    ;
 }
 
 #innerHoverCemetery #popupdiv {
@@ -2337,7 +2344,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    z-index: 10;
+    ;
 }
 
 #innerHoverBog #popupdiv {
@@ -2357,7 +2364,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverArsenal #popupdiv {
@@ -2377,7 +2384,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverChateau #popupdiv {
@@ -2397,7 +2404,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverEstuary #popupdiv {
@@ -2417,7 +2424,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverBeacon #popupdiv {
@@ -2437,7 +2444,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverOvergrownShrine #popupdiv {
@@ -2457,7 +2464,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverActon #popupdiv {
@@ -2477,7 +2484,7 @@ li {
     overflow: show;
     border-radius: 80px;
 
-    z-index: 10;
+    ;
 }
 
 #innerHoverHallofGrandmasters #popupdiv {
@@ -2496,7 +2503,7 @@ li {
     height: 80px;
     overflow: show;
     border-radius: 80px;
-    z-index: 10;
+    ;
 }
 
 #innerHoverPerandusManor #popupdiv {
@@ -2508,9 +2515,7 @@ li {
 }
 
 .footer {
-    position: fixed;
-    left: 0px;
-    bottom: 260px;
+    padding-top: 2000px;
     height: 50px;
     width: 100%;
 
@@ -2527,4 +2532,182 @@ li {
     position: absolute;
     top: -108px;
     left: 872px;
+}
+/*tier toogles*/
+#popupdiv:hover {
+ z-index: 55555 !important;
+
+}
+.list  {
+    display: block;
+    float: left;
+    width: 500px;
+}
+.toggles {
+    padding-left: 10rem;
+    padding-top: 1.5rem;
+    display: inline-block;
+
+}
+.right {
+    float: right;
+}
+/*Button*/
+bttn-default {
+  color: #fff;
+}
+.bttn-primary,
+.bttn,
+.bttn-lg,
+.bttn-md,
+.bttn-sm,
+.bttn-xs {
+  color: #1d89ff;
+}
+.bttn-warning {
+  color: #feab3a;
+}
+.bttn-danger {
+  color: #ff5964;
+}
+.bttn-success {
+  color: #28b78d;
+}
+.bttn-royal {
+  color: #bd2df5;
+}
+.bttn,
+.bttn-lg,
+.bttn-md,
+.bttn-sm,
+.bttn-xs {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+.bttn-lg {
+  padding: 8px 15px;
+  font-size: 25px;
+  font-family: inherit;
+}
+.bttn-md {
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+}
+.bttn-sm {
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.bttn-xs {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-family: inherit;
+}
+.bttn-float {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  font-size: 80px;
+  font-family: inherit;
+  padding: 5px 12px;
+  overflow: hidden;
+  border: 1px dotted #fff;
+  border-radius: 40px;
+  background: rgba(255,255,255,0.4);
+  color: #fff;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.bttn-float:hover,
+.bttn-float:focus {
+  box-shadow: 0 30px 30px rgba(0,0,0,0.16);
+  opacity: 0.85;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.4s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.4s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.4s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.4s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.bttn-float.bttn-xs {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-family: inherit;
+}
+.bttn-float.bttn-xs:hover,
+.bttn-float.bttn-xs:focus {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.bttn-float.bttn-sm {
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.bttn-float.bttn-sm:hover,
+.bttn-float.bttn-sm:focus {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+.bttn-float.bttn-md {
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+}
+.bttn-float.bttn-md:hover,
+.bttn-float.bttn-md:focus {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.bttn-float.bttn-lg {
+  padding: 8px 15px;
+  font-size: 90px;
+  font-family: inherit;
+}
+.bttn-float.bttn-lg:hover,
+.bttn-float.bttn-lg:focus {
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+.bttn-float.bttn-default {
+  border-color: #fff;
+  background: rgba(255,255,255,0.4);
+  color: #fff;
+}
+.bttn-float.bttn-primary {
+  border-color: #1d89ff;
+  background: rgba(29,137,255,0.4);
+  color: #1d89ff;
+}
+.bttn-float.bttn-warning {
+  border-color: #feab3a;
+  background: rgba(254,171,58,0.4);
+  color: #feab3a;
+}
+.bttn-float.bttn-danger {
+  border-color: #FF382A;
+  background: rgba(255,89,100,0.4);
+  color: #ff5964;
+}
+.bttn-float.bttn-success {
+  border-color: #28b78d;
+  background: rgba(40,183,141,0.4);
+  color: #28b78d;
+}
+.bttn-float.bttn-royal {
+  border-color: #bd2df5;
+  background: rgba(189,45,245,0.4);
+  color: #bd2df5;
 }
