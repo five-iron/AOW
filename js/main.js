@@ -72,6 +72,87 @@ function hide() {
     }
 }
 
+
+
+function mb() {
+
+ var y = document.getElementsByClassName("mbs");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+}
+function doc() {
+
+ var y = document.getElementsByClassName("doc");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
+function fiend() {
+
+ var y = document.getElementsByClassName("fiend");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
+function immortal() {
+
+ var y = document.getElementsByClassName("immortal");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
+function wealth() {
+
+ var y = document.getElementsByClassName("wealth");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
+function standing() {
+
+ var y = document.getElementsByClassName("standing");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
+function bower() {
+
+ var y = document.getElementsByClassName("bower");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
+function kaom() {
+
+ var y = document.getElementsByClassName("kaom");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
+function spark() {
+
+ var y = document.getElementsByClassName("spark");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
+function queen() {
+
+ var y = document.getElementsByClassName("queen");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
 function shape1() {
     var y = document.getElementsByClassName("shap1");
     for (i = 0; i < y.length; i++) {
