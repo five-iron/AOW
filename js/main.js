@@ -1,9 +1,10 @@
+
+
 $(function() {
-    $("#innerHoversewer, #innerHoverreef, #innerHovertropical, #innerHovervaalcity, #innerHovervaultofatziri, #innerHovercanyon, #innerHoverburial, #innerHoverbeach, #innerHoverjungle, #innerHovermarshes, #innerHoverpyramid, #innerHoverprimordal, #innerHoverphantasmagoria, #innerHovercavern, #innerHoverwaste, #innerHovermessa, #innerHoverquay, #innerHoverquary, #innerHoveracidlake, #innerHoverarachtomb, #innerHoverbeach, #innerHoverActon, #innerHoverArsenal, #innerHoverBazaar, #innerHoverMaze, #innerHoverPlaza, #innerHoverShipyard, #innerHoverArmoury,#innerHoverAbyss,#innerHoverAcademy, #innerHoverArena, #innerHoverArcade, #innerHoverActon, #innerHoverAshenWood, #innerHoverRamparts, #innerHoverPromenade, #innerHoverPrecinct, #innerHoverOasis, #innerHoverAridlake, #innerHoverDesert, #innerHoverColonnade, #innerHoverOrchard, #innerhoverTemple, #innerHoverMalformation, #innerHoverExcavation, #innerHoverNecropolis, #innerHoverLair, #innerHoverMineralPools, #innerHoverShrine, #innerHoverGorge, #innerHoverVault, #innerHoverUndergroundSea, #innerHoverUndergroundRiver, #innerHoverCoves, #innerHoverIvoryTemple, #innerHoverColosseum, #innerHoverPlateau, #innerHoverResidence, #innerHoverTortureChamber, #innerHoverCatacombs, #innerHoverWaterways, #innerHoverSprings, #innerHoverOvergrownRuin, #innerHoverPalace, #innerHoverDarkForest, #innerHoverHighGarden, #innerHoverTerrace, #innerHoverBarrows, #innerHoverMuseum, #innerHoverCourtyard, #innerHoverWasteland, #innerHoverCrematorium, #innerHoverSulphurWastes, #innerHoverVolcano, #innerHoverCore, #innerHoverCrypt, #innerHoverCemetery, #innerHoverBog, #innerHoverChateau, #innerHoverEstuary, #innerHoverBeacon, #innerHoverHallofGrandmasters, #innerhoverperandusmanor, #innerHoverpit, #innerHoverScriptorium, #innerHovercrystalore, #innerHoverFactory, #innerHoverchanell, #innerHoverracecourse, #innerHovercells, #innerHoverArachnidNest, #innerHoverShore, #innerHoverAtoll, #innerHoverGhetto, #innerHoverGraveyard, #innerHoverTower, #innerHoverSpiderLair, #innerHoverThicket, #innerHoverSpiderForest, #innerHoverMudGeyser, #innerHoverPier, #innerHoverOvergrownShrine, #innerHoverPeninsula, #innerHoverWharf, #innerHoverStrand, #innerHoverCastleRuins, #innerHoverDunes, #innerHoverDungeon, #innerHoverVilla, #innerHoverGroto    ").draggable({ scroll: true });
-
-
+     $("#innerHoversewer, #innerHoverputrid, #innerHoverVaaltemple, #innerHoverreef, #innerHovertropical, #innerHovervaalcity, #innerHovervaultofatziri, #innerHovercanyon, #innerHoverburial, #innerHoverbeach, #innerHoverjungle, #innerHovermarshes, #innerHoverpyramid, #innerHoverprimordal, #innerHoverphantasmagoria, #innerHovercavern, #innerHoverwaste, #innerHovermessa, #innerHoverquay, #innerHoverquary, #innerHoveracidlake, #innerHoverarachtomb, #innerHoverbeach, #innerHoverActon, #innerHoverArsenal, #innerHoverBazaar, #innerHoverMaze, #innerHoverPlaza, #innerHoverShipyard, #innerHoverArmoury,#innerHoverAbyss,#innerHoverAcademy, #innerHoverArena, #innerHoverArcade, #innerHoverActon, #innerHoverAshenWood, #innerHoverRamparts, #innerHoverPromenade, #innerHoverPrecinct, #innerHoverOasis, #innerHoverAridlake, #innerHoverDesert, #innerHoverColonnade, #innerHoverOrchard, #innerhoverTemple, #innerHoverMalformation, #innerHoverExcavation, #innerHoverNecropolis, #innerHoverLair, #innerHoverMineralPools, #innerHoverShrine, #innerHoverGorge, #innerHoverVault, #innerHoverUndergroundSea, #innerHoverUndergroundRiver, #innerHoverCoves, #innerHoverIvoryTemple, #innerHoverColosseum, #innerHoverPlateau, #innerHoverResidence, #innerHoverTortureChamber, #innerHoverCatacombs, #innerHoverWaterways, #innerHoverSprings, #innerHoverOvergrownRuin, #innerHoverPalace, #innerHoverDarkForest, #innerHoverHighGarden, #innerHoverTerrace, #innerHoverBarrows, #innerHoverMuseum, #innerHoverCourtyard, #innerHoverWasteland, #innerHoverCrematorium, #innerHoverSulphurWastes, #innerHoverVolcano, #innerHoverCore, #innerHoverCrypt, #innerHoverCemetery, #innerHoverBog, #innerHoverChateau, #innerHoverEstuary, #innerHoverBeacon, #innerHoverHallofGrandmasters, #innerhoverperandusmanor, #innerHoverpit, #innerHoverScriptorium, #innerHovercrystalore, #innerHoverFactory, #innerHoverchanell, #innerHoverracecourse, #innerHovercells, #innerHoverArachnidNest, #innerHoverShore, #innerHoverAtoll, #innerHoverGhetto, #innerHoverGraveyard, #innerHoverTower, #innerHoverSpiderLair, #innerHoverThicket, #innerHoverSpiderForest, #innerHoverMudGeyser, #innerHoverPier, #innerHoverOvergrownShrine, #innerHoverPeninsula, #innerHoverWharf, #innerHoverStrand, #innerHoverCastleRuins, #innerHoverDunes, #innerHoverDungeon, #innerHoverVilla, #innerHoverGroto    ").draggable({ scroll: true });
+ 
+ 
 });
-
 
 function hide() {
     var y = document.getElementsByClassName("T2");
@@ -67,6 +68,10 @@ function hide() {
         y[i].style.display = "none";
     }
     var y = document.getElementsByClassName("T1");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "none";
+    }
+    var y = document.getElementsByClassName("T16");
     for (i = 0; i < y.length; i++) {
         y[i].style.display = "none";
     }
