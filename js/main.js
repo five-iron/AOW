@@ -153,6 +153,14 @@ function queen() {
     }
 
 }
+function hope() {
+
+ var y = document.getElementsByClassName("hope");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+
+}
 function shape1() {
     var y = document.getElementsByClassName("shap1");
     for (i = 0; i < y.length; i++) {
