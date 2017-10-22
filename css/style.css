@@ -1380,7 +1380,26 @@ li {
     display: block;
 }
 
+
+
 #innerHoverColonnade {
+    position: absolute;
+    top: 1178px;
+    left: 3258px;
+    width: 80px;
+    height: 80px;
+    overflow: show;
+    border-radius: 80px;
+}
+
+#innerHoverColonnade #popupdiv {
+    display: none;
+}
+
+#innerHoverColonnade:hover #popupdiv {
+    display: block;
+}
+#innerHoverArmoury {
     position: absolute;
     top: 2800px;
     left: 5503px;
@@ -1392,11 +1411,11 @@ li {
     ;
 }
 
-#innerHoverColonnade #popupdiv {
+#innerHoverArmoury #popupdiv {
     display: none;
 }
 
-#innerHoverColonnade:hover #popupdiv {
+#innerHoverArmoury:hover #popupdiv {
     display: block;
 }
 
@@ -2095,23 +2114,6 @@ li {
     display: block;
 }
 
-#innerHoverArmoury {
-    position: absolute;
-    top: 1178px;
-    left: 3258px;
-    width: 80px;
-    height: 80px;
-    overflow: show;
-    border-radius: 80px;
-}
-
-#innerHoverArmoury #popupdiv {
-    display: none;
-}
-
-#innerHoverArmoury:hover #popupdiv {
-    display: block;
-}
 
 #innerHoverPromenade {
     position: absolute;
