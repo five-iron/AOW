@@ -2749,3 +2749,10 @@ bttn-default {
     background: rgba(189, 45, 245, 0.4);
     color: #bd2df5;
 }
+
+
+.feedback h1{
+ font-family: 'Shojumaru', cursive; 
+ font-size: 80px;
+ padding-top: 3500px;
+}
