@@ -282,7 +282,7 @@
             </div>
         </div>
         <div id="innerHoverpit">
-            <div id="popupdiv" class="T5" onclick="style.display='block'">
+            <div id="popupdiv" class="T5" onclick="clicked(this);style.display='block'">
                 <table align="center" class="ItemGen">
                     <tbody>
                         <tr>
@@ -5224,52 +5224,52 @@
     </div>
     <!-- Toggles starts here -->
     <div class="toggles">
-        <button class="bttn-float bttn-lg  bttn-primary" onclick="T1()">Tier 1 </button>
-        <button class="bttn-float bttn-lg  bttn-primary" onclick="T2()">Tier 2 </button>
-        <button class="bttn-float bttn-lg  bttn-primary" onclick="T3()">Tier 3 </button>
-        <button class="bttn-float bttn-lg  bttn-primary" onclick="T4()">Tier 4 </button>
-        <button class="bttn-float bttn-lg  bttn-primary" onclick="T5()">Tier 5 </button>
-        <button class="bttn-float bttn-lg  bttn-warning" onclick="T6()">Tier 6 </button>
-        <button class="bttn-float bttn-lg  bttn-warning" onclick="T7()">Tier 7 </button>
-        <button class="bttn-float bttn-lg  bttn-warning" onclick="T8()">Tier 8 </button>
-        <button class="bttn-float bttn-lg  bttn-warning" onclick="T9()">Tier 9 </button>
-        <button class="bttn-float bttn-lg  bttn-warning" onclick="T10()">Tier 10 </button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick="T11()">Tier 11 </button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick="T12()">Tier 12 </button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick="T13()">Tier 13 </button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick="T14()">Tier 14 </button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick="T15()">Tier 15 </button>
+        <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T1')">Tier 1 </button>
+        <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T2')">Tier 2 </button>
+        <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T3')">Tier 3 </button>
+        <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T4')">Tier 4 </button>
+        <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T5')">Tier 5 </button>
+        <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T6')">Tier 6 </button>
+        <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T7')">Tier 7 </button>
+        <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T8')">Tier 8 </button>
+        <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T9')">Tier 9 </button>
+        <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T10')">Tier 10 </button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T11')">Tier 11 </button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T12')">Tier 12 </button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T13')">Tier 13 </button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T14')">Tier 14 </button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T15')">Tier 15 </button>
         <div class="right">
             <button class="bttn-float bttn-lg bttn-success">Maps you need to shape</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape1()">T1</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape2()">T2</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape3()">T3</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape4()">T4</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape5()">T5</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape6()">T6</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape7()">T7</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape8()">T8</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape9()">T9</button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="shape10()">T10</button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick=" hide()">hide all</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap1')">T1</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap2')">T2</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap3')">T3</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap4')">T4</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap5')">T5</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap6')">T6</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap7')">T7</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap8')">T8</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap9')">T9</button>
+            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap10')">T10</button>
+            <button class="bttn-float bttn-lg  bttn-danger" onclick="hideAllTiers()">hide all</button>
         </div>
     </div>
     <div class="toogles">
-        <button class=" bttn-float bttn-lg  bttn-danger" onclick=" mb()">Multiple bosses</button>
+        <button class=" bttn-float bttn-lg  bttn-danger" onclick="show('mbs')">Multiple bosses</button>
     </div>
     <div class="list">
         <button class="bttn-float bttn-lg  bttn-royal">Divination card farm</button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick=" doc()">The Doctor</button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick=" fiend()">The Fiend</button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick=" queen()">The Queen</button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick=" hope()">Last Hope</button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick=" spark()">The Spark and the Flame</button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick=" immortal()">The immortal</button>
-        <button class="bttn-float bttn-lg bttn-success" onclick=" wealth()">Abandoned Wealth</button>
-        <button class="bttn-float bttn-lg bttn-success" onclick=" standing()">The Last One Standing</button>
-        <button class="bttn-float bttn-lg bttn-success" onclick=" bower()">Bowyer's Dream</button>
-        <button class="bttn-float bttn-lg bttn-success" onclick=" kaom()">The King's Heart</button>
-        <button class="bttn-float bttn-lg  bttn-danger" onclick=" hide()">hide all</button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('doc')">The Doctor</button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('fiend')">The Fiend</button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('queen')">The Queen</button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('hope')">Last Hope</button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('spark')">The Spark and the Flame</button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="show('immortal')">The immortal</button>
+        <button class="bttn-float bttn-lg bttn-success" onclick="show('wealth')">Abandoned Wealth</button>
+        <button class="bttn-float bttn-lg bttn-success" onclick="show('standing')">The Last One Standing</button>
+        <button class="bttn-float bttn-lg bttn-success" onclick="show('bower')">Bowyer's Dream</button>
+        <button class="bttn-float bttn-lg bttn-success" onclick="show('kaom')">The King's Heart</button>
+        <button class="bttn-float bttn-lg  bttn-danger" onclick="hideAllTiers()">hide all</button>
     </div>
 
     <div class="feedback">
