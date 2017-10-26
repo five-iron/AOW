@@ -133,20 +133,20 @@
                                                         {{/each}}
                                                     </div>
                                                     <div class="ImplicitMod">
-                                                        {{#each implicitMods}}
+                                                        {{#each implicitModHtmls}}
                                                             {{!-- Three curly brackets like below will be trusted/parsed as html --}}
                                                             {{{this}}}
                                                             <div class="ItemUniqueSeparator"></div>
                                                         {{/each}}
                                                     </div>
                                                     <div class="ExplicitMod">
-                                                        {{#each explicitMods}}
+                                                        {{#each explicitModHtmls}}
                                                             <a target="_blank" href="">{{{this}}}</a><br>
                                                         {{/each}}
                                                     </div>
                                                     <div class="ItemUniqueSeparator"></div>
                                                     <div class="FlavourText">
-                                                        {{#each flavourTexts}}
+                                                        {{#each flavourTextHtmls}}
                                                             {{{this}}}
                                                             <br>
                                                         {{/each}}
