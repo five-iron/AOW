@@ -128,7 +128,7 @@ a {
 /* NO IMAGES FROM NEGRICH*/
 
 .itemimage {
-    display: none;
+    /* display: none; */
 }
 
 .itemimageinside {
@@ -140,20 +140,19 @@ a {
     font-family: FontinSmallCaps, "Fontin SmallCapsa", "Helvetica Neue", Helvetica, Arial, ?????, sans-serif;
     font-weight: 400;
     float: left;
-    max-height: 600px;
     width: 300px;
     margin: 0px;
     background: rgb(34, 35, 25);
 }
 
-.itemgen tbody {
+.Itemgen tbody {
     vertical-align: auto;
     border-color: inherit;
     height: 700px;
     width: 300px;
 }
 
-.itemgen tr {
+.Itemgen tr {
     vertical-align: auto;
     border-color: inherit;
 }
@@ -206,6 +205,11 @@ a {
     position: absolute;
 }
 
+.ItemBody {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .FlavourText,
 .TextUnique {
     color: #af6025;
@@ -241,7 +245,6 @@ a {
 .popupdiv {
     background: gray;
     width: 800px;
-    max-height: 900px;
 }
 
 .popupdiv h1 {
@@ -261,8 +264,7 @@ li {
 .innerHover {
     position: absolute;
     width: 80px;
-    height: 80px/**region height*/
-    ;
+    height: 80px;/**region height*/
     overflow: show;
     border-radius: 80px;
 }
