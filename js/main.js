@@ -112,6 +112,19 @@ function showMap(event) {
     }
 }
 
+function toggleClass(className) {
+    let displayValues = $('.' + className).map((i,el)=>el.style.display)
+    if([...displayValues].includes('block')) {
+        hideClass(className);
+    } else {
+        showClass(className);
+    }
+}
+
+function hideClass(className) {
+    setDisplayByGivenClassNames([className], '');
+}
+
 function showClass(className) {
     setDisplayByGivenClassNames([className], 'block');
 }
