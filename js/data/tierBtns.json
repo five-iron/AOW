@@ -1,0 +1,62 @@
+[{
+        "tierToShow": "T1",
+        "displayName": "Tier 1",
+        "class": "bttn-primary"
+    }, {
+        "tierToShow": "T2",
+        "displayName": "Tier 2",
+        "class": "bttn-primary"
+    }, {
+        "tierToShow": "T3",
+        "displayName": "Tier 3",
+        "class": "bttn-primary"
+    }, {
+        "tierToShow": "T4",
+        "displayName": "Tier 4",
+        "class": "bttn-primary"
+    }, {
+        "tierToShow": "T5",
+        "displayName": "Tier 5",
+        "class": "bttn-primary"
+    }, {
+        "tierToShow": "T6",
+        "displayName": "Tier 6",
+        "class": "bttn-warning"
+    }, {
+        "tierToShow": "T7",
+        "displayName": "Tier 7",
+        "class": "bttn-warning"
+    }, {
+        "tierToShow": "T8",
+        "displayName": "Tier 8",
+        "class": "bttn-warning"
+    }, {
+        "tierToShow": "T9",
+        "displayName": "Tier 9",
+        "class": "bttn-warning"
+    }, {
+        "tierToShow": "T10",
+        "displayName": "Tier 10",
+        "class": "bttn-warning"
+    }, {
+        "tierToShow": "T11",
+        "displayName": "Tier 11",
+        "class": "bttn-danger"
+    }, {
+        "tierToShow": "T12",
+        "displayName": "Tier 12",
+        "class": "bttn-danger"
+    }, {
+        "tierToShow": "T13",
+        "displayName": "Tier 13",
+        "class": "bttn-danger"
+    }, {
+        "tierToShow": "T14",
+        "displayName": "Tier 14",
+        "class": "bttn-danger"
+    }, {
+        "tierToShow": "T15",
+        "displayName": "Tier 15",
+        "class": "bttn-danger"
+    }
+]

@@ -1,0 +1,66 @@
+[{
+        "tier": "Tier 1",
+        "candidates": [
+            "Jungle Valley"
+        ]
+    }, {
+        "tier": "Tier 2",
+        "candidates": [
+            "Oasis(density)",
+            "Beach(linear)"
+        ]
+    }, {
+        "tier": "Tier 3",
+        "candidates": [
+            "Arid lake(density)",
+            "Channel(linear)"
+        ]
+    }, {
+        "tier": "Tier 4",
+        "candidates": [
+            "Graveyard(density)",
+            "Acid lakes(linear)"
+        ]
+    }, {
+        "tier": "Tier 5",
+        "candidates": [
+            "Dunes(density)",
+            "Primordial Pool(density)",
+            "Mesa(linear)"
+        ]
+    }, {
+        "tier": "Tier 6",
+        "candidates": [
+            "Canyoun(density)",
+            "Racecourse(linear)",
+            "Strand"
+        ]
+    }, {
+        "tier": "Tier 7",
+        "candidates": [
+            "Mud Geyser(linear+dark)",
+            "Ashen Wood(density)"
+        ]
+    }, {
+        "tier": "Tier 8(2)",
+        "candidates": [
+            "Tropical Island",
+            "Bog(density)",
+            "Atoll(linear)"
+        ]
+    }, {
+        "tier": "Tier 9(3)",
+        "candidates": [
+            "Promenade",
+            "Reef(density)",
+            "Crypt"
+        ]
+    }, {
+        "tier": "Tier 10(3)",
+        "candidates": [
+            "Courtyard(density)",
+            "Underground River(linear)",
+            "Colonnade(linear)"
+        ]
+    }
+]

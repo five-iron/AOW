@@ -10,99 +10,44 @@
 
             gtag('config', 'UA-107990685-2');
         </script>
-        <meta name="viewport" content="width=device-width, initial-scale=0.3">
         <title>AoW map</title>
-        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
-        <script>
-            Handlebars.registerHelper('times', function(n, block) {
-                var accum = '';
-                for(var i = 0; i < n; ++i)
-                    accum += block.fn(i);
-                return accum;
-            });
-        </script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shojumaru">
+        <script type="text/javascript" src="js/handlebarsHelpers.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shojumaru">
         <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
     </head>
-
     <body>
-        <div class="shapingmaps">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tier</th>
-                        <th>Candidate</th>
-                        <th>Candidate</th>
-                        <th>Candidate</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><b>Tier 1</b></td>
-                        <td>Jungle Valley</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <B>Tier 2</B>
-                        </td>
-                        <td>Oasis(density)</td>
-                        <td>Beach(linear)</td>
-                    </tr>
-                    <tr>
-                        <td><b>Tier 3</b></td>
-                        <td>Arid lake(density)</td>
-                        <td>Channel(linear)</td>
-                    </tr>
-                    <tr>
-                        <td><b>Tier 4</b></td>
-                        <td>Graveyard(density)</td>
-                        <td>Acid lakes(linear)</td>
-                    </tr>
-                    <tr>
-                        <td><b>Tier 5</b></td>
-                        <td>Dunes(density)</td>
-                        <td>Primordial Pool(density)</td>
-                        <td>Mesa(linear)</td>
-                    </tr>
-                    <tr>
-                        <td><b>Tier 6</b></td>
-                        <td>Canyoun(density) </td>
-                        <td>Racecourse (linear)</td>
-                        <td>Strand </td>
-                    </tr>
-                    <tr>
-                        <td><b>Tier 7</b></td>
-                        <td>Mud Geyser(linear+dark) </td>
-                        <td>Ashen Wood(density) </td>
-                    </tr>
-                    <tr>
-                        <td><b>Tier 8(2)</b></td>
-                        <td>Tropical Island</td>
-                        <td>Bog (density)</td>
-                        <td>Atoll(linear) </td>
-                    </tr>
-                    <tr>
-                        <td><b>Tier 9(3)</b></td>
-                        <td>Promenade</td>
-                        <td>Reef (density)</td>
-                        <td>Crypt </td>
-                    </tr>
-                    <tr>
-                        <td><b>Tier 10(3)</b></td>
-                        <td>Courtyard (density)</td>
-                        <td>Underground River(linear)</td>
-                        <td>Colonnade(linear) </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div id="tierBtnsPlaceholder"></div>
+        <script id="tier-template" type="text/x-handlebars-template">
+            <div class="toggles">
+                {{#each tierBtns}}
+                    <button class="on-top bttn-float bttn-md {{class}}" onclick="showClass('{{tierToShow}}')">{{displayName}}</button>
+                {{/each}}
+                <button class="on-top bttn-float bttn-md bttn-default" onclick="hideAll()">Hide all</button>
+            </div>
+        </script>
+        <div id="cardBtnsPlaceholder"></div>
+        <script id="card-template" type="text/x-handlebars-template">
+            <div class="list">
+                <button class=" on-top bttn-float bttn-md bttn-danger" onclick="showClass('mbs')">Multiple bosses</button>
+                <button class="on-top bttn-float bttn-md bttn-royal">Divination card farm</button>
+                {{#each cardBtns}}
+                    <button class="on-top bttn-float bttn-md {{class}}" onclick="showClass('{{cardToShow}}')">{{displayName}}</button>
+                {{/each}}
+                <button class="on-top bttn-float bttn-md bttn-default" onclick="hideAll()">Hide all</button>
+            </div>
+        </script>
+        <div class="mapDiv grabbable" id="mapDiv">
+            <img id="mapImg" class="selectDisable" ondragstart="return false;" src='img/AOW3.jpg'></img>
         </div>
+        <div id="mapsPlaceholder"></div>
         <script id="map-template" type="text/x-handlebars-template">
             {{#each maps}}
                 <div class="innerHover ui-draggable ui-draggable-handle" id="{{id}}">
-                    <div draggable="true" class="popupdiv {{class}}" onclick="style.display='block'" onfocus="style.display='block'">
+                    <div draggable="true" class="popupdiv {{class}}" id="{{id}}popup">
                         <table align="center" class="ItemGen">
                             <tbody>
                                 <tr>
@@ -110,10 +55,10 @@
                                         <div class="ItemBox">
                                             <div class="ItemContent">
                                                 <div class="TitleUniqueBar">
-                                                    <div class="TitleUniqueBarL"></div>
-                                                    <div class="TitleUniqueBarR"></div>
                                                     <div class="TextUnique">
+                                                        <img class="TitleUniqueBarL" src="http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderUniqueLeft.png">
                                                         <span class="ItemName">{{displayName}}</span>
+                                                        <img class="TitleUniqueBarR" src="http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderUniqueRight.png">
                                                     </div>
                                                     <div class="TextUnique">
                                                         <span class="ItemType"></span>
@@ -141,7 +86,7 @@
                                                     </div>
                                                     <div class="ExplicitMod">
                                                         {{#each explicitModHtmls}}
-                                                            <a target="_blank" href="">{{{this}}}</a><br>
+                                                            <a target="_blank" href="" onclick="return false;">{{{this}}}</a><br>
                                                         {{/each}}
                                                     </div>
                                                     <div class="ItemUniqueSeparator"></div>
@@ -167,71 +112,41 @@
                 </div>
             {{/each}}
         </script>
-        <div id="mapsPlaceholder"></div>
-        <!-- Toggles starts here -->
-        <div class="toggles">
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T1')">Tier 1 </button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T2')">Tier 2 </button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T3')">Tier 3 </button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T4')">Tier 4 </button>
-            <button class="bttn-float bttn-lg  bttn-primary" onclick="show('T5')">Tier 5 </button>
-            <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T6')">Tier 6 </button>
-            <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T7')">Tier 7 </button>
-            <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T8')">Tier 8 </button>
-            <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T9')">Tier 9 </button>
-            <button class="bttn-float bttn-lg  bttn-warning" onclick="show('T10')">Tier 10 </button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T11')">Tier 11 </button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T12')">Tier 12 </button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T13')">Tier 13 </button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T14')">Tier 14 </button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('T15')">Tier 15 </button>
-            <div class="right">
-                <button class="bttn-float bttn-lg bttn-success">Maps you need to shape</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap1')">T1</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap2')">T2</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap3')">T3</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap4')">T4</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap5')">T5</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap6')">T6</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap7')">T7</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap8')">T8</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap9')">T9</button>
-                <button class="bttn-float bttn-lg  bttn-primary" onclick="show('shap10')">T10</button>
-                <button class="bttn-float bttn-lg  bttn-danger" onclick="hideAll()">hide all</button>
-                <button class="bttn-float bttn-lg  bttn-danger" onclick="resetAllPositions()">reset positions</button>
+        <div id="shapingMapsPlaceholder"></div>
+        <script id="shapingMaps-template" type="text/x-handlebars-template">
+            <div class="shapingmaps on-top">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Candidate</th>
+                            <th>Candidate</th>
+                            <th>Candidate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each shapingMaps}}
+                            <tr>
+                                <td><b>{{tier}}</b></td>
+                                {{#each candidates}}
+                                    <td>{{this}}</td>
+                                {{/each}}
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
             </div>
-        </div>
-        <div class="toogles">
-            <button class=" bttn-float bttn-lg  bttn-danger" onclick="show('mbs')">Multiple bosses</button>
-        </div>
-        <div class="list">
-            <button class="bttn-float bttn-lg  bttn-royal">Divination card farm</button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('doc')">The Doctor</button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('fiend')">The Fiend</button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('queen')">The Queen</button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('hope')">Last Hope</button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('spark')">The Spark and the Flame</button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="show('immortal')">The immortal</button>
-            <button class="bttn-float bttn-lg bttn-success" onclick="show('wealth')">Abandoned Wealth</button>
-            <button class="bttn-float bttn-lg bttn-success" onclick="show('standing')">The Last One Standing</button>
-            <button class="bttn-float bttn-lg bttn-success" onclick="show('bower')">Bowyer's Dream</button>
-            <button class="bttn-float bttn-lg bttn-success" onclick="show('kaom')">The King's Heart</button>
-            <button class="bttn-float bttn-lg  bttn-danger" onclick="hideAll()">hide all</button>
-        </div>
-
-        <div class="feedback">
-            
-            <h1>
-                <a href="https://goo.gl/forms/FGCYuI3yqFEyUdbw1">Throw some critic or ideas </a>
-            </h1>
+        </script>
+        <div>
+            <!-- <h1> -->
+                <a class="feedback on-top" href="https://goo.gl/forms/FGCYuI3yqFEyUdbw1">Throw some critique or ideas </a>
+            <!-- </h1> -->
         </div>
         <!-- <div class="footer">
             <h1>This map brought to you by <b>Dufran</b>. <a href="https://blockchain.info/payment_request?address=1Mavxi7gczVsj7fNhYbugv5dKV7Pivwv5Z&amount_local=1&currency=USD&nosavecurrency=true&message=BuyMeaBeer"><img src="img/bmab.png" alt="" height="250px"></a></h1>
         </div> -->
+        <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/doc.js"></script>
     </body>
-
-     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-
-
-    <script type="text/javascript" src="js/main.js"></script>
 </html>

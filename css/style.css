@@ -1,15 +1,11 @@
-html {
-    height: 100%;
-    width: 100%;
-    zoom: 25%;
+
+body {
+    background-color: black;
+    font-family: poefont;
+    /* position: relative; */
 }
 
 body {
-    font-family: poefont;
-    position: relative;
-    background: #000 url(../img/AOW3.jpg) no-repeat;
-    height: 100%;
-    width: 100%;
 }
 
 a {
@@ -17,78 +13,39 @@ a {
     color: antiquewhite;
 }
 
-
-
-/*Shaping maps */
-
-.shapingmaps {
-    position: absolute;
-    left: 0;
-    top: 3000px;
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    z-index: 0;
 }
 
-.shapingmaps table {
-    border-collapse: separate;
-    background: #DDD;
-    @include border-radius(5px);
-    margin: 5px auto;
-    @include box-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+.mapDiv {
+    /* cursor: grab; */
+    position:absolute;
+    top: 0px;
 }
 
-.shapingmaps thead {
-    @include border-radius(5px);
+/* TODO: Set cursor to 'grabbing' (closed hand) while dragging */
+.grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
 }
 
-.shapingmaps thead th {
-    font-size: 44px;
-    font-weight: 400;
-    color: black;
-    @include text-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
-    text-align: left;
-    padding: 8px;
-    @include background-image(linear-gradient(#646f7f, #4a5564));
-    border-top: 1px solid #858d99;
-    &:first-child {
-        @include border-top-left-radius(5px);
-    }
-    &:last-child {
-        @include border-top-right-radius(5px);
-    }
+.selectDisable {
+    -webkit-user-select: none;  
+    -khtml-user-select: none;   
+    -moz-user-select: none; 
+    -o-user-select: none;    
+    user-select: none; 
 }
 
-.shapingmaps tbody tr td {
-    font-weight: 400;
-    color: #5f6062;
-    font-size: 31px;
-    padding: 8px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.shapingmaps tbody tr:nth-child(2n) {
-    background: #f0f3f5;
-}
-
-.shapingmaps tbody tr:last-child td {
-    border-bottom: none;
-    &:first-child {
-        @include border-bottom-left-radius(5px);
-    }
-    &:last-child {
-        @include border-bottom-right-radius(5px);
-    }
-}
-
-.shapingmaps tbody:hover>tr td {
-    @include opacity(0.5);
-    /* uncomment for blur effect */
-    /* color:transparent;
-  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
-}
-
-.shapingmaps tbody:hover>tr:hover td {
-    @include text-shadow(none);
-    color: #2d2d2d;
-    @include opacity(1.0);
+.on-top {
+    z-index: 100;
 }
 
 @font-face {
@@ -96,9 +53,7 @@ a {
     src: url(../fonts/fontin-regular.ttf);
 }
 
-
-
-/*stars collor*/
+/*stars color*/
 
 .fa-star {
     color: orange;
@@ -112,27 +67,15 @@ a {
 
 /*POP UP BOX STYLE STUFF*/
 
-.itemimageinside {
+.ItemImageInside {
     vertical-align: middle;
-    height: 721px;
-    width: 721px;
-    margin-bottom: 40px;
-}
-
-.itemimageinside img {
-    height: 200px;
-}
-
-
-
-/* NO IMAGES FROM NEGRICH*/
-
-.itemimage {
+    width: 133px;
+    border: 0;
     /* display: none; */
 }
 
-.itemimageinside {
-    border: 0;
+.ItemImageInside img {
+    height: 100px;
 }
 
 .ItemGen {
@@ -140,7 +83,7 @@ a {
     font-family: FontinSmallCaps, "Fontin SmallCapsa", "Helvetica Neue", Helvetica, Arial, ?????, sans-serif;
     font-weight: 400;
     float: left;
-    width: 300px;
+    width: 200px;
     margin: 0px;
     background: rgb(34, 35, 25);
 }
@@ -149,7 +92,7 @@ a {
     vertical-align: auto;
     border-color: inherit;
     height: 700px;
-    width: 300px;
+    width: 200px;
 }
 
 .Itemgen tr {
@@ -164,7 +107,6 @@ a {
 .ItemContainer {
     position: relative;
     margin-bottom: 0;
-    font-size: 60px;
     font-weight: 400;
     width: auto;
     height: auto;
@@ -173,7 +115,7 @@ a {
 .ItemBox {
     text-align: center;
     color: #EFEFEF;
-    font-size: 1em;
+    font-size: 14px;
     background: url(http://webcdn.pathofexile.com/image/game_ui/hover_background.png);
 }
 
@@ -184,30 +126,29 @@ a {
 
 .TitleUniqueBar {
     background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderUniqueMiddle.png?scale=2) top left repeat-x;
+    background-size: contain;
     position: relative;
-    height: 120px;
-    padding-top: -300px;
 }
 
 .TitleUniqueBarL {
-    background: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderUniqueLeft.png?scale=2) top left no-repeat;
-    height: 80px;
-    width: 43px;
+    height: 100%;
+    background-size: inherit;
     left: 0;
+    top: 0px;
     position: absolute;
 }
 
 .TitleUniqueBarR {
-    background-image: url(http://webcdn.pathofexile.com/image/Art/2DArt/UIImages/InGame/ItemsHeaderUniqueRight.png?scale=2);
-    height: 84px;
-    width: 68px;
-    right: -1px;
+    height: 100%;
+    background-size: inherit;
+    right: 0px;
+    top: 0px;
     position: absolute;
 }
 
 .ItemBody {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .FlavourText,
@@ -218,7 +159,6 @@ a {
 .ItemName,
 .ItemType {
     font-family: 'Shojumaru', cursive;
-    font-size: 60px;
     position: relative;
     top: 0px;
 }
@@ -244,11 +184,11 @@ a {
 
 .popupdiv {
     background: gray;
-    width: 800px;
+    width: 200px;
 }
 
 .popupdiv h1 {
-    font-size: 80px;
+    /* font-size: 80px; */
 }
 
 .popupdiv ul {
@@ -263,10 +203,10 @@ li {
 
 .innerHover {
     position: absolute;
-    width: 80px;
-    height: 80px;/**region height*/
+    width: 27px;
+    height: 27px;/**region height*/
     overflow: show;
-    border-radius: 80px;
+    /* border-radius: 80px; */
 }
 
 .innerHover .popupdiv{
@@ -285,7 +225,7 @@ li {
 
 .footer h1 {
     position: relative;
-    padding-left: 80px;
+    /* padding-left: 80px; */
     font-size: 50px;
     color: antiquewhite;
 }
@@ -306,12 +246,12 @@ li {
 .list {
     display: block;
     float: left;
-    width: 500px;
+    width: 13%;
 }
 
 .toggles {
     padding-left: 10rem;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
     display: inline-block;
 }
 
@@ -322,17 +262,8 @@ li {
 
 /*Button*/
 
-bttn-default {
+.bttn-default {
     color: #fff;
-}
-
-.bttn-primary,
-.bttn,
-.bttn-lg,
-.bttn-md,
-.bttn-sm,
-.bttn-xs {
-    color: #1d89ff;
 }
 
 .bttn-warning {
@@ -351,43 +282,18 @@ bttn-default {
     color: #bd2df5;
 }
 
-.bttn,
-.bttn-lg,
-.bttn-md,
-.bttn-sm,
-.bttn-xs {
+.bttn-md {
+    font-size: 20px;
+    font-family: inherit;
+    padding: 2px 9px;
     margin: 0;
     padding: 0;
     border-width: 0;
     border-color: transparent;
-    background: transparent;
     font-weight: 400;
     cursor: pointer;
     position: relative;
-}
-
-.bttn-lg {
-    padding: 8px 15px;
-    font-size: 25px;
-    font-family: inherit;
-}
-
-.bttn-md {
-    font-size: 20px;
-    font-family: inherit;
-    padding: 5px 12px;
-}
-
-.bttn-sm {
-    padding: 4px 10px;
-    font-size: 16px;
-    font-family: inherit;
-}
-
-.bttn-xs {
-    padding: 3px 8px;
-    font-size: 12px;
-    font-family: inherit;
+    color: #1d89ff;
 }
 
 .bttn-float {
@@ -395,18 +301,18 @@ bttn-default {
     padding: 0;
     border-width: 0;
     border-color: transparent;
-    background: transparent;
     font-weight: 400;
     cursor: pointer;
     position: relative;
-    font-size: 80px;
+    font-size: 20px;
     font-family: inherit;
-    padding: 5px 12px;
+    padding: 2px 9px;
     overflow: hidden;
-    border: 1px dotted #fff;
-    border-radius: 40px;
+    border: 1px #fff;
+    border-radius: 10px;
     background: rgba(255, 255, 255, 0.4);
     color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     -webkit-transition: opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
     transition: opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
     transition: transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -415,7 +321,7 @@ bttn-default {
 
 .bttn-float:hover,
 .bttn-float:focus {
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
     opacity: 0.85;
     -webkit-transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.4s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
     transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.4s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -423,52 +329,10 @@ bttn-default {
     transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), box-shadow 0.4s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
-.bttn-float.bttn-xs {
-    padding: 3px 8px;
-    font-size: 12px;
-    font-family: inherit;
-}
-
-.bttn-float.bttn-xs:hover,
-.bttn-float.bttn-xs:focus {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-}
-
-.bttn-float.bttn-sm {
-    padding: 4px 10px;
-    font-size: 16px;
-    font-family: inherit;
-}
-
-.bttn-float.bttn-sm:hover,
-.bttn-float.bttn-sm:focus {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-}
-
-.bttn-float.bttn-md {
-    font-size: 20px;
-    font-family: inherit;
-    padding: 5px 12px;
-}
-
 .bttn-float.bttn-md:hover,
 .bttn-float.bttn-md:focus {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-}
-
-.bttn-float.bttn-lg {
-    padding: 8px 15px;
-    font-size: 90px;
-    font-family: inherit;
-}
-
-.bttn-float.bttn-lg:hover,
-.bttn-float.bttn-lg:focus {
-    -webkit-transform: translateY(-12px);
-    transform: translateY(-12px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .bttn-float.bttn-default {
@@ -507,9 +371,82 @@ bttn-default {
     color: #bd2df5;
 }
 
+/*Shaping maps */
 
-.feedback h1{
- font-family: 'Shojumaru', cursive; 
- font-size: 80px;
- padding-top: 3500px;
+.shapingmaps {
+    /* TODO: Less hacky positioning */
+    position: absolute;
+    bottom: 70px;
+}
+
+.shapingmaps table {
+    border-collapse: separate;
+    background: #DDD;
+    @include border-radius(5px);
+    margin: 5px auto;
+    @include box-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+}
+
+.shapingmaps thead {
+    @include border-radius(5px);
+}
+
+.shapingmaps thead th {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    @include text-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
+    text-align: left;
+    padding: 0px;
+    @include background-image(linear-gradient(#646f7f, #4a5564));
+    border-top: 1px solid #858d99;
+    &:first-child {
+        @include border-top-left-radius(5px);
+    }
+    &:last-child {
+        @include border-top-right-radius(5px);
+    }
+}
+
+.shapingmaps tbody tr td {
+    font-weight: 400;
+    color: #5f6062;
+    font-size: 10px;
+    padding: 0px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.shapingmaps tbody tr:nth-child(2n) {
+    background: #f0f3f5;
+}
+
+.shapingmaps tbody tr:last-child td {
+    border-bottom: none;
+    &:first-child {
+        @include border-bottom-left-radius(5px);
+    }
+    &:last-child {
+        @include border-bottom-right-radius(5px);
+    }
+}
+
+.shapingmaps tbody:hover>tr td {
+    @include opacity(0.5);
+    /* uncomment for blur effect */
+    /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+}
+
+.shapingmaps tbody:hover>tr:hover td {
+    @include text-shadow(none);
+    color: #2d2d2d;
+    @include opacity(1.0);
+}
+
+.feedback  {
+    font-family: 'Shojumaru', cursive; 
+    font-size: 20px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
 }

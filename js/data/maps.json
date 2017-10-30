@@ -3,8 +3,8 @@
         "class": "T1 mbs",
         "displayName": "Crystal Ore",
         "rating": 3,
-        "top": "532px",
-        "left": "1288px",
+        "top": 532,
+        "left": 1288,
         "descriptions": [
             "Map based on the Mines from Act 4"
         ],
@@ -29,8 +29,8 @@
         "class": "T2",
         "displayName": "Factory",
         "rating": 2,
-        "top": "935px",
-        "left": "1259px",
+        "top": 935,
+        "left": 1259,
         "descriptions": [
             "Map based on the Warehouse District from Act 3"
         ],
@@ -51,8 +51,8 @@
         "class": "T3 shap3",
         "displayName": "Channel",
         "rating": 5,
-        "top": "1199px",
-        "left": "1486px",
+        "top": 1199,
+        "left": 1486,
         "descriptions": [
             "Map based on the The Aqueduct from Act 4"
         ],
@@ -75,8 +75,8 @@
         "class": "T4 shap4",
         "displayName": "Acid Lake",
         "rating": 5,
-        "top": "832px",
-        "left": "1478px",
+        "top": 832,
+        "left": 1478,
         "descriptions": [
             "Map is linear cave that takes you for a stroll along an acid lake"
         ],
@@ -100,8 +100,8 @@
         "class": "T5",
         "displayName": "Pit",
         "rating": 3,
-        "top": "621px",
-        "left": "1557px",
+        "top": 621,
+        "left": 1557,
         "descriptions": [
             "Map based on Daresso's Dream"
         ],
@@ -124,8 +124,8 @@
         "class": "T6 shap6 mbs",
         "displayName": "Racecourse",
         "rating": 5,
-        "top": "461px",
-        "left": "1852px",
+        "top": 461,
+        "left": 1852,
         "descriptions": [
             "Map consists of two long stadiums"
         ],
@@ -148,8 +148,8 @@
         "class": "T7",
         "displayName": "Cells",
         "rating": 2,
-        "top": "492px",
-        "left": "2207px",
+        "top": 492,
+        "left": 2207,
         "descriptions": [
             "Map based on Crematorium"
         ],
@@ -172,8 +172,8 @@
         "class": "T8",
         "displayName": "Arachnid Nest",
         "rating": 2,
-        "top": "670px",
-        "left": "2880px",
+        "top": 670,
+        "left": 2880,
         "descriptions": [
             "Map based on the Weaver's Chambers zone in Act 2"
         ],
@@ -196,8 +196,8 @@
         "class": "T6",
         "displayName": "Quary",
         "rating": 4,
-        "top": "829px",
-        "left": "2068px",
+        "top": 829,
+        "left": 2068,
         "descriptions": [
             "Map outdoors "
         ],
@@ -222,8 +222,8 @@
         "class": "T10 ",
         "displayName": "Quay",
         "rating": 5,
-        "top": "3495px",
-        "left": "2748px",
+        "top": 3495,
+        "left": 2748,
         "descriptions": [
             "Map based on Marketplace from Act 3 "
         ],
@@ -248,8 +248,8 @@
         "class": "T5 shap5",
         "displayName": "Mesa",
         "rating": 5,
-        "top": "1100px",
-        "left": "1841px",
+        "top": 1100,
+        "left": 1841,
         "descriptions": [
             "Map based on red cliff tiles from Kaom's Dream "
         ],
@@ -272,8 +272,8 @@
         "class": "T4",
         "displayName": "Waste pool",
         "rating": 2,
-        "top": "1605px",
-        "left": "1566px",
+        "top": 1605,
+        "left": 1566,
         "descriptions": [
             "Map based on sewer zones in Act 3 "
         ],
@@ -295,8 +295,8 @@
         "class": "T5",
         "displayName": "Cavern",
         "rating": 2,
-        "top": "1708px",
-        "left": "1280px",
+        "top": 1708,
+        "left": 1280,
         "descriptions": [
             "Map based on the Cavern of Whrath and Cavern of Anger zones in Act 1 "
         ],
@@ -317,8 +317,8 @@
         "class": "T4",
         "displayName": "Phantasmagoria",
         "rating": 2,
-        "top": "2334px",
-        "left": "1404px",
+        "top": 2334,
+        "left": 1404,
         "descriptions": [
             "Map based on the Belly of the Beast zone in Act 4. Has no sidepaths, few doors "
         ],
@@ -341,8 +341,8 @@
         "class": "T5 shap5",
         "displayName": "Primordial Pool",
         "rating": 5,
-        "top": "1992px",
-        "left": "1536px",
+        "top": 1992,
+        "left": 1536,
         "descriptions": [
             "Map is a circular path around that widens at areas "
         ],
@@ -361,8 +361,8 @@
         "class": "T3 queen mbs",
         "displayName": "Vaal Pyramid",
         "rating": 2,
-        "top": "2587px",
-        "left": "1660px",
+        "top": 2587,
+        "left": 1660,
         "descriptions": [
             "Map is based on the Ancient Pyramid zone in Act 2. It has 3 sections connected by stairs"
         ],
@@ -383,8 +383,8 @@
         "class": "T3",
         "displayName": "Marshes",
         "rating": 4,
-        "top": "2706px",
-        "left": "1350px",
+        "top": 2706,
+        "left": 1350,
         "descriptions": [
             "Map is based on two or three large swampy islands connected by wooden planks"
         ],
@@ -404,8 +404,8 @@
         "class": "T1 shap1",
         "displayName": "Jungle Valley",
         "rating": 5,
-        "top": "3245px",
-        "left": "1668px",
+        "top": 3245,
+        "left": 1668,
         "descriptions": [
             "Map is based on The Riverways zone in Act 2"
         ],
@@ -429,8 +429,8 @@
         "class": "T2 shap2",
         "displayName": "Beach",
         "rating": 5,
-        "top": "3035px",
-        "left": "1831px",
+        "top": 3035,
+        "left": 1831,
         "descriptions": [
             "Map based on the Tidal Island zone in Act 1 "
         ],
@@ -451,8 +451,8 @@
         "class": "T5 doc",
         "displayName": "Burial Chamber",
         "rating": 3,
-        "top": "2235px",
-        "left": "1825px",
+        "top": 2235,
+        "left": 1825,
         "descriptions": [
             "Map is based on the Crossroads for the outdoor part and Vaal ruins for the indoor part"
         ],
@@ -475,8 +475,8 @@
         "class": "T6 shap6 mbs",
         "displayName": "Canyon",
         "rating": 5,
-        "top": "1764px",
-        "left": "1901px",
+        "top": 1764,
+        "left": 1901,
         "descriptions": [
             "Map based on the The Climb zone in Act 1 "
         ],
@@ -498,8 +498,8 @@
         "class": "T3",
         "displayName": "Vault of Atziri map",
         "rating": 5,
-        "top": "2508px",
-        "left": "1799px",
+        "top": 2508,
+        "left": 1799,
         "descriptions": [
             "Map consists entirely of rooms filled with gold pots, chests, large chests, and the Atziri's Vessel, wich contains 8 Sacrifice Map Fragments and/or Vaal Skill Gems. "
         ],
@@ -522,8 +522,8 @@
         "class": "T6",
         "displayName": "Vaal City",
         "rating": 4,
-        "top": "2488px",
-        "left": "2104px",
+        "top": 2488,
+        "left": 2104,
         "descriptions": [
             "Map is a outdoor map with many Vaal buildings and a canal runing through the middle, similar to the Vaal City world area "
         ],
@@ -543,8 +543,8 @@
         "class": "T7",
         "displayName": "Arachnid Tomb",
         "rating": 3,
-        "top": "2741px",
-        "left": "1988px",
+        "top": 2741,
+        "left": 1988,
         "descriptions": [
             "Map is similar to The Vaal Ruins, except it's covered in spider webs. It has two levels. "
         ],
@@ -565,8 +565,8 @@
         "class": "T8 shap8 mbs",
         "displayName": "Tropical island",
         "rating": 3,
-        "top": "3040px",
-        "left": "2129px",
+        "top": 3040,
+        "left": 2129,
         "descriptions": [
             "Map is based on The Southern Forest zone in Act2. It consists of two long, narrow islands connected y a small cave. "
         ],
@@ -589,8 +589,8 @@
         "class": "T9 shap9",
         "displayName": "Reef",
         "rating": 4,
-        "top": "3590px",
-        "left": "2140px",
+        "top": 3590,
+        "left": 2140,
         "descriptions": [
             "Map is based on TIdal Island zone in Act 1"
         ],
@@ -614,8 +614,8 @@
         "class": "T7 shap7 bower",
         "displayName": "Ashen Wood",
         "rating": 4,
-        "top": "664px",
-        "left": "2650px",
+        "top": 664,
+        "left": 2650,
         "descriptions": [
             "Map based on The Old Fields zone in Act 2"
         ],
@@ -639,8 +639,8 @@
         "class": "T8",
         "displayName": "Shore",
         "rating": 5,
-        "top": "2640px",
-        "left": "2374px",
+        "top": 2640,
+        "left": 2374,
         "descriptions": [
             "Map based on The Coast area in Act 1",
             "Shaping candidate"
@@ -664,8 +664,8 @@
         "class": "T8 shap8",
         "displayName": "Atoll",
         "rating": 5,
-        "top": "2418px",
-        "left": "5346px",
+        "top": 2418,
+        "left": 5346,
         "descriptions": [
             "Map based on The Ledge zone in Act 1",
             "Shaping candidate"
@@ -687,7 +687,7 @@
         "displayName": "Arcade",
         "rating": 5,
         "top": "3210",
-        "left": "6275px",
+        "left": 6275,
         "descriptions": [
             "Map is outdoor that uses the Sarn tileset. Like the Marketplace in Act 3, this area is a large field filled with the ruins of market stralls."
         ],
@@ -710,7 +710,7 @@
         "displayName": "Ghetto",
         "rating": 3,
         "top": "3100",
-        "left": "5980px",
+        "left": 5980,
         "descriptions": [
             "Map is based on The Slums zone in Act 3"
         ],
@@ -732,7 +732,7 @@
         "displayName": "Sewer",
         "rating": 2,
         "top": "3350",
-        "left": "5870px",
+        "left": 5870,
         "descriptions": [
             "Map is an indoor map that uses the Sewers tileset. Its layout is a twisting maze of tunnels and small rooms, similar to the sewer zone in Act 3"
         ],
@@ -755,8 +755,8 @@
         "class": "T4 shap4",
         "displayName": "Graveyard",
         "rating": 2,
-        "top": "3130px",
-        "left": "5530px",
+        "top": 3130,
+        "left": 5530,
         "descriptions": [
             "Map is based on the Fellshrine Ruins zone in Act 2. Starting point in the middle"
         ],
@@ -779,8 +779,8 @@
         "class": "T5",
         "displayName": "Tower",
         "rating": 2,
-        "top": "2451px",
-        "left": "5941px",
+        "top": 2451,
+        "left": 5941,
         "descriptions": [
             "Map is a prisoner tower. where the starting point is on the lowest level.Map has four levels connected by stairs"
         ],
@@ -803,8 +803,8 @@
         "class": "T4",
         "displayName": "Academy",
         "rating": 2,
-        "top": "2909px",
-        "left": "6267px",
+        "top": 2909,
+        "left": 6267,
         "descriptions": [
             "Map is based on The Library zone in Act 3"
         ],
@@ -825,8 +825,8 @@
         "class": "T5",
         "displayName": "Spider Lair",
         "rating": 2,
-        "top": "1978px",
-        "left": "6198px",
+        "top": 1978,
+        "left": 6198,
         "descriptions": [
             "Map is based on The Weaver's Chambers zone in Act 2"
         ],
@@ -847,8 +847,8 @@
         "class": "T6",
         "displayName": "Thicket",
         "rating": 3,
-        "top": "1750px",
-        "left": "6138px",
+        "top": 1750,
+        "left": 6138,
         "descriptions": [
             "Map is a more linear version of the Dread Thicket zone in Act 2"
         ],
@@ -869,8 +869,8 @@
         "class": "T6 shap6 doc",
         "displayName": "Spider Forest",
         "rating": 3,
-        "top": "2030px",
-        "left": "6003px",
+        "top": 2030,
+        "left": 6003,
         "descriptions": [
             "Map is based on the The Blackwood zone in Act 2.Features moderately open areas broken up by large patches of impassable forest. There are plenty of narrow areas to use to avoid being surrounded, but few strong choke points"
         ],
@@ -894,8 +894,8 @@
         "class": "T7 shap7",
         "displayName": "Mud Geyser",
         "rating": 5,
-        "top": "2052px",
-        "left": "5716px",
+        "top": 2052,
+        "left": 5716,
         "descriptions": [
             "Map is based on the Fetid Pool zone in Act 1. The layout is very open, with impassable large body of water in the middle"
         ],
@@ -917,8 +917,8 @@
         "class": "T8",
         "displayName": "Pier",
         "rating": 5,
-        "top": "2423px",
-        "left": "5605px",
+        "top": 2423,
+        "left": 5605,
         "descriptions": [
             "Map is a sunny version of The Docks zone in Act 3. It's mostly linear and filled with cranes and other obstacles"
         ],
@@ -939,8 +939,8 @@
         "class": "T6",
         "displayName": "Ramparts",
         "rating": 5,
-        "top": "1805px",
-        "left": "5425px",
+        "top": 1805,
+        "left": 5425,
         "descriptions": [
             "Map is a linear map that consists of two parts: a forest outside the walls and the ramparts"
         ],
@@ -960,8 +960,8 @@
         "class": "T5",
         "displayName": "Peninsula",
         "rating": 5,
-        "top": "1430px",
-        "left": "5535px",
+        "top": 1430,
+        "left": 5535,
         "descriptions": [
             "Map is based on The Southern Forest zone in Act 2"
         ],
@@ -983,8 +983,8 @@
         "class": "T6",
         "displayName": "Wharf",
         "rating": 4,
-        "top": "1255px",
-        "left": "5135px",
+        "top": 1255,
+        "left": 5135,
         "descriptions": [
             "Map is an outdoor map that uses the Docks tileset. This area is linear, unlike The Docks in Act 3"
         ],
@@ -1007,8 +1007,8 @@
         "class": "T6 shape6 mbs",
         "displayName": "Strand",
         "rating": 5,
-        "top": "1030px",
-        "left": "5355px",
+        "top": 1030,
+        "left": 5355,
         "descriptions": [
             "Map is based on the Twilight Strand zone in Act 1"
         ],
@@ -1031,8 +1031,8 @@
         "class": "T7",
         "displayName": "Castle Ruins",
         "rating": 4,
-        "top": "728px",
-        "left": "5099px",
+        "top": 728,
+        "left": 5099,
         "descriptions": [
             "Map is based on The Broken Bridge zone in Act 2. It's a large open space with many ruins and a road leading to the bridge"
         ],
@@ -1059,8 +1059,8 @@
         "class": "T5 shap5",
         "displayName": "Dunes",
         "rating": 4,
-        "top": "1030px",
-        "left": "5679px",
+        "top": 1030,
+        "left": 5679,
         "descriptions": [
             "Map is based on Dried Lake zone in Act 4"
         ],
@@ -1081,8 +1081,8 @@
         "class": "T4",
         "displayName": "Villa",
         "rating": 2,
-        "top": "1391px",
-        "left": "5818px",
+        "top": 1391,
+        "left": 5818,
         "descriptions": [
             "Map is based on The Sceptre of God in Act 3, also has small garden areas inside"
         ],
@@ -1106,8 +1106,8 @@
         "class": "T4",
         "displayName": "Dungeon",
         "rating": 2,
-        "top": "1215px",
-        "left": "6148px",
+        "top": 1215,
+        "left": 6148,
         "descriptions": [
             "Map is an indoor map that uses the Prison tileset. The layout is a single floor filled with small rooms, similar to the prison areas in Act 1"
         ],
@@ -1130,8 +1130,8 @@
         "class": "T4 shap4",
         "displayName": "Groto",
         "rating": 3,
-        "top": "1410px",
-        "left": "6213px",
+        "top": 1410,
+        "left": 6213,
         "descriptions": [
             "Map is an indoor map that uses the Caverns tileset. The area's layout is a large loop with occasional dead-end corridors"
         ],
@@ -1154,8 +1154,8 @@
         "class": "T2 shap2",
         "displayName": "Oasis",
         "rating": 5,
-        "top": "789px",
-        "left": "6092px",
+        "top": 789,
+        "left": 6092,
         "descriptions": [
             "Map is outdoor"
         ],
@@ -1176,8 +1176,8 @@
         "class": "T3 shap3",
         "displayName": "Arid Lake",
         "rating": 5,
-        "top": "983px",
-        "left": "6044px",
+        "top": 983,
+        "left": 6044,
         "descriptions": [
             "Map uses the Fetid Pool tileset. It is a large, open area with a pool of water in the center, similar to the Fetid Pool in Act 1. Players start at the edge of the map, and the boss arena spawns on the opposite side close to the water"
         ],
@@ -1199,8 +1199,8 @@
         "class": "T1",
         "displayName": "Desert",
         "rating": 5,
-        "top": "555px",
-        "left": "6129px",
+        "top": 555,
+        "left": 6129,
         "descriptions": [
             "Map is based on the Dried Lake from Act 4"
         ],
@@ -1220,8 +1220,8 @@
         "class": "T10 shap10 ",
         "displayName": "Colonnade",
         "rating": 5,
-        "top": "1178px",
-        "left": "3258px",
+        "top": 1178,
+        "left": 3258,
         "descriptions": [
             "Map is based on the Battlefront zone in Act 3"
         ],
@@ -1244,8 +1244,8 @@
         "class": "T8 mbs",
         "displayName": "Arena",
         "rating": 3,
-        "top": "3083px",
-        "left": "5325px",
+        "top": 3083,
+        "left": 5325,
         "descriptions": [
             "Map is based on The Grand Arena from act 4 and consists of three Passageways and five Arenas"
         ],
@@ -1269,8 +1269,8 @@
         "class": "T9",
         "displayName": "Orchard",
         "rating": 3,
-        "top": "3360px",
-        "left": "5345px",
+        "top": 3360,
+        "left": 5345,
         "descriptions": [
             "Map is outdoor that uses the Garden tileset. Similar to The Imperial Gardens in Act 3, there is a paved road running through the area surrounded by paths and gardens on both sides"
         ],
@@ -1292,8 +1292,8 @@
         "class": "T9",
         "displayName": "Temple",
         "rating": 2,
-        "top": "3018px",
-        "left": "4875px",
+        "top": 3018,
+        "left": 4875,
         "descriptions": [
             "Map is based on the Solaris tileset from Act 3 and it always contains Aurate Warrior, Aurate Archer, Auric Champion (statue enemies)"
         ],
@@ -1317,8 +1317,8 @@
         "class": "T10 ",
         "displayName": "Malformation",
         "rating": 3,
-        "top": "3481px",
-        "left": "4784px",
+        "top": 3481,
+        "left": 4784,
         "descriptions": [
             "Map is based on The Belly of the Beast Level 2 zone in Act 4"
         ],
@@ -1342,8 +1342,8 @@
         "class": "T11 mbs ",
         "displayName": "Excavation",
         "rating": 3,
-        "top": "3258px",
-        "left": "4459px",
+        "top": 3258,
+        "left": 4459,
         "descriptions": [
             "Map is based on the The Mines Level 2 zone in Act 4"
         ],
@@ -1369,8 +1369,8 @@
         "class": "T12 ",
         "displayName": "Necropolis",
         "rating": 3,
-        "top": "3009px",
-        "left": "4529px",
+        "top": 3009,
+        "left": 4529,
         "descriptions": [
             "Map is based on the Church Dungeon in Act 2"
         ],
@@ -1390,8 +1390,8 @@
         "class": "T13 ",
         "displayName": "Lair",
         "rating": 3,
-        "top": "2700px",
-        "left": "4718px",
+        "top": 2700,
+        "left": 4718,
         "descriptions": [
             "Map is based on Act 2's Forest tileset and Caverns tileset. At the start of the map is a river with a log bridge, a cave mouth and several packs of Wolves. The second part is a cavern which is a complex of tunnels and constitutes the majority of the map. At the end of the cavern is an exit to a lair that contains the boss and several packs of monsters"
         ],
@@ -1414,8 +1414,8 @@
         "class": "T14 ",
         "displayName": "Mineral Pools",
         "rating": 3,
-        "top": "2400px",
-        "left": "4458px",
+        "top": 2400,
+        "left": 4458,
         "descriptions": [
             "Map is an outdoor version of The Submerged Passage"
         ],
@@ -1437,8 +1437,8 @@
         "class": "T15 kaom ",
         "displayName": "Abyss",
         "rating": 3,
-        "top": "2740px",
-        "left": "4328px",
+        "top": 2740,
+        "left": 4328,
         "descriptions": [
             "Map is based on Kaom's Stronghold"
         ],
@@ -1462,8 +1462,8 @@
         "class": "T14 fiend ",
         "displayName": "Shrine",
         "rating": 3,
-        "top": "3056px",
-        "left": "4024px",
+        "top": 3056,
+        "left": 4024,
         "descriptions": [
             "Map is based on The Lunaris Temple Level 2 (Act 3)"
         ],
@@ -1487,8 +1487,8 @@
         "class": "T13 ",
         "displayName": "Gorge",
         "rating": 3,
-        "top": "3260px",
-        "left": "4021px",
+        "top": 3260,
+        "left": 4021,
         "descriptions": [
             "Map is based on the The Climb zone in Act 1"
         ],
@@ -1511,8 +1511,8 @@
         "class": "T12 wealth ",
         "displayName": "Vault",
         "rating": 5,
-        "top": "3200px",
-        "left": "3470px",
+        "top": 3200,
+        "left": 3470,
         "descriptions": [
             "Map is mostly based on the Mansion areas found in The Lord's Labyrinth"
         ],
@@ -1536,8 +1536,8 @@
         "class": "T11 ",
         "displayName": "Underground Sea",
         "rating": 5,
-        "top": "3368px",
-        "left": "3589px",
+        "top": 3368,
+        "left": 3589,
         "descriptions": [
             "Map is based on the Cavern of Wrath and Cavern of Anger zones in Act 1"
         ],
@@ -1561,8 +1561,8 @@
         "class": "T10 shap10 ",
         "displayName": "Underground River",
         "rating": 5,
-        "top": "3620px",
-        "left": "2982px",
+        "top": 3620,
+        "left": 2982,
         "descriptions": [
             "Map is based on the first part of The Caverns in Act 2. It's a linear series of caverns connected by narrow bridges"
         ],
@@ -1587,8 +1587,8 @@
         "class": "T9 mbs",
         "displayName": "Coves",
         "rating": 5,
-        "top": "3041px",
-        "left": "2452px",
+        "top": 3041,
+        "left": 2452,
         "descriptions": [
             "Map is based on The Coves zone, which was previously found in Act 1. It's a circular island with the starting point in the middle"
         ],
@@ -1612,8 +1612,8 @@
         "class": "T11 mbs",
         "displayName": "Precinct",
         "rating": 5,
-        "top": "3202px",
-        "left": "2766px",
+        "top": 3202,
+        "left": 2766,
         "descriptions": [
             "Map is based on the The Slums zone in Act 3"
         ],
@@ -1638,8 +1638,8 @@
         "class": "T12 ",
         "displayName": "Ivory Temple",
         "rating": 5,
-        "top": "2825px",
-        "left": "2681px",
+        "top": 2825,
+        "left": 2681,
         "descriptions": [
             "Map is based on the Imperial Gardens and Solaris Temple zones in Act 3. The map has both a boss arena and a side-passage to a pocket zone"
         ],
@@ -1662,8 +1662,8 @@
         "class": "T13 ",
         "displayName": "Plaza",
         "rating": 5,
-        "top": "2655px",
-        "left": "2850px",
+        "top": 2655,
+        "left": 2850,
         "descriptions": [
             "Map is based on The Labyrinth"
         ],
@@ -1683,8 +1683,8 @@
         "class": "T14 ",
         "displayName": "Maze",
         "rating": 5,
-        "top": "2293px",
-        "left": "2963px",
+        "top": 2293,
+        "left": 2963,
         "descriptions": [
             "Map is based on The Ancient Pyramid zone in Act 2"
         ],
@@ -1705,8 +1705,8 @@
         "class": "T15 ",
         "displayName": "Colosseum",
         "rating": 5,
-        "top": "2248px",
-        "left": "3235px",
+        "top": 2248,
+        "left": 3235,
         "descriptions": [
             "Map is based on Daresso's Dream and The Grand Arena"
         ],
@@ -1728,8 +1728,8 @@
         "class": "T13 ",
         "displayName": "Scriptorium",
         "rating": 5,
-        "top": "2623px",
-        "left": "3158px",
+        "top": 2623,
+        "left": 3158,
         "descriptions": [
             "Map is based on The Library but is gray, covered in spider webs and contains many narrow paths and large chasms"
         ],
@@ -1754,8 +1754,8 @@
         "class": "T12 spark ",
         "displayName": "Plateau",
         "rating": 5,
-        "top": "2738px",
-        "left": "3496px",
+        "top": 2738,
+        "left": 3496,
         "descriptions": [
             "Map is based on The Ledge zone in Act 1"
         ],
@@ -1775,8 +1775,8 @@
         "class": "T12 ",
         "displayName": "Residence",
         "rating": 5,
-        "top": "2993px",
-        "left": "3237px",
+        "top": 2993,
+        "left": 3237,
         "descriptions": [
             "Map is based on The Sceptre of God zone in Act 3"
         ],
@@ -1798,8 +1798,8 @@
         "class": "T11 ",
         "displayName": "Torture Chamber",
         "rating": 5,
-        "top": "3203px",
-        "left": "3137px",
+        "top": 3203,
+        "left": 3137,
         "descriptions": [
             "Map is based on The Prison zone in Act1"
         ],
@@ -1824,8 +1824,8 @@
         "class": "T7",
         "displayName": "Catacombs",
         "rating": 5,
-        "top": "2318px",
-        "left": "2401px",
+        "top": 2318,
+        "left": 2401,
         "descriptions": [
             "Map is based on the Catacombs zone in Act 3. It's always a square loop"
         ],
@@ -1851,8 +1851,8 @@
         "class": "T16 hope",
         "displayName": "The Vaal Temple",
         "rating": 5,
-        "top": "2201px",
-        "left": "2672px",
+        "top": 2201,
+        "left": 2672,
         "descriptions": [
             "Map is based on the Vaal Pyramid map"
         ],
@@ -1869,8 +1869,8 @@
         "class": "T13 ",
         "displayName": "Waterways",
         "rating": 5,
-        "top": "1696px",
-        "left": "2733px",
+        "top": 1696,
+        "left": 2733,
         "descriptions": [
             "Map is based on The Aqueduct in Act 4"
         ],
@@ -1892,8 +1892,8 @@
         "class": "T14 ",
         "displayName": "Springs",
         "rating": 5,
-        "top": "1602px",
-        "left": "3123px",
+        "top": 1602,
+        "left": 3123,
         "descriptions": [
             "Map is an outdoor map that uses the Forest tileset. There is a central mountain where the portal is located, surrounded by an approximately circular map"
         ],
@@ -1915,8 +1915,8 @@
         "class": "T15 ",
         "displayName": "Overgrown Ruin",
         "rating": 5,
-        "top": "1444px",
-        "left": "3411px",
+        "top": 1444,
+        "left": 3411,
         "descriptions": [
             "Map is based on The Chamber of Sins"
         ],
@@ -1941,8 +1941,8 @@
         "class": "T14 ",
         "displayName": "Palace",
         "rating": 5,
-        "top": "1923px",
-        "left": "2711px",
+        "top": 1923,
+        "left": 2711,
         "descriptions": [
             "Map is based on The Upper Sceptre of God in Act 3"
         ],
@@ -1966,8 +1966,8 @@
         "class": "T15 ",
         "displayName": "Dark Forest",
         "rating": 5,
-        "top": "1853px",
-        "left": "3021px",
+        "top": 1853,
+        "left": 3021,
         "descriptions": [
             "Map is based on The Western Forest (Act 2)"
         ],
@@ -1994,8 +1994,8 @@
         "class": "T13 ",
         "displayName": "High Garden",
         "rating": 5,
-        "top": "1989px",
-        "left": "2363px",
+        "top": 1989,
+        "left": 2363,
         "descriptions": [
             "Map is based on The Imperial Gardens. The majority of the map consists of a highly elevated walkway that uses the Aqueduct tileset and has hedges as walls"
         ],
@@ -2017,8 +2017,8 @@
         "class": "T12 ",
         "displayName": "Shipyard",
         "rating": 5,
-        "top": "1454px",
-        "left": "2197px",
+        "top": 1454,
+        "left": 2197,
         "descriptions": [
             "Map is based on The Docks zone in Act 3"
         ],
@@ -2040,8 +2040,8 @@
         "class": "T11  ",
         "displayName": "Bazaar",
         "rating": 5,
-        "top": "1442px",
-        "left": "2536px",
+        "top": 1442,
+        "left": 2536,
         "descriptions": [
             "Map is based on the Marketplace zone in Act 3 and contains many Giant Gladiator Statues"
         ],
@@ -2064,8 +2064,8 @@
         "class": "T11 ",
         "displayName": "Terrace",
         "rating": 5,
-        "top": "1130px",
-        "left": "2320px",
+        "top": 1130,
+        "left": 2320,
         "descriptions": [
             "Map is a more linear version of The Hedge Maze zone in Act 3"
         ],
@@ -2085,8 +2085,8 @@
         "class": "T7",
         "displayName": "Armoury",
         "rating": 5,
-        "top": "2800px",
-        "left": "5503px",
+        "top": 2800,
+        "left": 5503,
         "descriptions": [
             "Map is a darker version of Mansion Atrium/Annex in The Lord's Labyrinth without the traps. Some rooms might have blocked off entrances and tearable walls"
         ],
@@ -2107,8 +2107,8 @@
         "class": "T9 shap9 mbs",
         "displayName": "Promenade",
         "rating": 5,
-        "top": "1018px",
-        "left": "3424px",
+        "top": 1018,
+        "left": 3424,
         "descriptions": [
             "Map is a linear version of The Battlefront zone in Act 3. Has many auric statues"
         ],
@@ -2132,8 +2132,8 @@
         "class": "T9",
         "displayName": "Barrows",
         "rating": 5,
-        "top": "851px",
-        "left": "3655px",
+        "top": 851,
+        "left": 3655,
         "descriptions": [
             "Map is based on The Wetlands in Act 2. It has small inside areas (tombs) based on The Vaal Ruins"
         ],
@@ -2154,8 +2154,8 @@
         "class": "T9 mbs",
         "displayName": "Museum",
         "rating": 5,
-        "top": "876px",
-        "left": "3935px",
+        "top": 876,
+        "left": 3935,
         "descriptions": [
             "Map is an indoor map that uses the Library tileset. Several large chambers with bottomless pits are connected by hallways with smaller side rooms around the border."
         ],
@@ -2180,8 +2180,8 @@
         "class": "T9 doc fiend immortal kaom queen spark wealth ",
         "displayName": "The Putrid Cloister",
         "rating": 5,
-        "top": "814px",
-        "left": "4063px",
+        "top": 814,
+        "left": 4063,
         "descriptions": [
             "Map is an indoor map that uses the Library tileset. Drops almost all top tier divination cards"
         ],
@@ -2198,8 +2198,8 @@
         "class": "T10 shap10 mbs",
         "displayName": "Courtyard",
         "rating": 5,
-        "top": "1229px",
-        "left": "3975px",
+        "top": 1229,
+        "left": 3975,
         "descriptions": [
             "Map is based on The Imperial Gardens in Act 3"
         ],
@@ -2223,8 +2223,8 @@
         "class": "T11 ",
         "displayName": "Wasteland",
         "rating": 5,
-        "top": "1409px",
-        "left": "4184px",
+        "top": 1409,
+        "left": 4184,
         "descriptions": [
             "Map is based on The Dried Lake area in Act 4. It's a series of wide deserts connected by narrow ravines. There are many small campsites scattered over the map"
         ],
@@ -2245,8 +2245,8 @@
         "class": "T12 ",
         "displayName": "Crematorium",
         "rating": 5,
-        "top": "1451px",
-        "left": "4527px",
+        "top": 1451,
+        "left": 4527,
         "descriptions": [
             "Map uses tileset from act 3, layout and style is very similar to the act zone of the same name. Very few wide open spaces and many doorways and small hall areas. The map is divided into 5 sub-areas connected by stairs"
         ],
@@ -2270,8 +2270,8 @@
         "class": "T13 ",
         "displayName": "Sulphur Wastes",
         "rating": 2,
-        "top": "1905px",
-        "left": "4720px",
+        "top": 1905,
+        "left": 4720,
         "descriptions": [
             "Map uses tileset and layout as that of The Dried Lake"
         ],
@@ -2290,8 +2290,8 @@
         "class": "T14 kaom",
         "displayName": "Volcano",
         "rating": 2,
-        "top": "2269px",
-        "left": "4716px",
+        "top": 2269,
+        "left": 4716,
         "descriptions": [
             "Map uses Kaom Stronhold tilesets"
         ],
@@ -2312,8 +2312,8 @@
         "class": "T15 ",
         "displayName": "Core",
         "rating": 2,
-        "top": "1819px",
-        "left": "4461px",
+        "top": 1819,
+        "left": 4461,
         "descriptions": [
             "Map based on The Harvest"
         ],
@@ -2341,8 +2341,8 @@
         "class": "T9 shap9 divin",
         "displayName": "Crypt",
         "rating": 2,
-        "top": "935px",
-        "left": "4096px",
+        "top": 935,
+        "left": 4096,
         "descriptions": [
             "Map is an indoor map that uses the Crypt tileset. Like The Crypt in Act 2, this area's layout is a random maze with rooms of varying size."
         ],
@@ -2366,8 +2366,8 @@
         "class": "T8 mbs",
         "displayName": "Cemetery",
         "rating": 2,
-        "top": "864px",
-        "left": "4442px",
+        "top": 864,
+        "left": 4442,
         "descriptions": [
             "Map is based on the Fellshrine Ruins zone in Act 2"
         ],
@@ -2388,8 +2388,8 @@
         "class": "T8 shap8",
         "displayName": "Bog",
         "rating": 2,
-        "top": "544px",
-        "left": "4437px",
+        "top": 544,
+        "left": 4437,
         "descriptions": [
             "Map is based on the Fetid Pool zone in Act 1"
         ],
@@ -2410,8 +2410,8 @@
         "class": "T10  wealth",
         "displayName": "Arsenal",
         "rating": 2,
-        "top": "1179px",
-        "left": "4287px",
+        "top": 1179,
+        "left": 4287,
         "descriptions": [
             "Map is based on The Warehouse district zone in Act 3"
         ],
@@ -2436,8 +2436,8 @@
         "class": "T11 ",
         "displayName": "Chateau",
         "rating": 2,
-        "top": "1169px",
-        "left": "4793px",
+        "top": 1169,
+        "left": 4793,
         "descriptions": [
             "Map is based on Estate Walkways area in The Lord's Labyrinth, without the traps."
         ],
@@ -2459,8 +2459,8 @@
         "class": "T12 ",
         "displayName": "Estuary",
         "rating": 2,
-        "top": "1796px",
-        "left": "4957px",
+        "top": 1796,
+        "left": 4957,
         "descriptions": [
             "Map is base type. It is an area where lava and sea meet, creating a solid ground."
         ],
@@ -2481,8 +2481,8 @@
         "class": "T13 ",
         "displayName": "Beacon",
         "rating": 2,
-        "top": "2105px",
-        "left": "5248px",
+        "top": 2105,
+        "left": 5248,
         "descriptions": [
             "Map is base type. It is an area where lava and sea meet, creating a solid ground."
         ],
@@ -2502,8 +2502,8 @@
         "class": "T9",
         "displayName": "Overgrown Shrine",
         "rating": 2,
-        "top": "936px",
-        "left": "2908px",
+        "top": 936,
+        "left": 2908,
         "descriptions": [
             "Map is base type. It is an area where lava and sea meet, creating a solid ground."
         ],
@@ -2523,8 +2523,8 @@
         "class": "T9",
         "displayName": "Acton's Nightmare",
         "rating": 2,
-        "top": "886px",
-        "left": "2798px",
+        "top": 886,
+        "left": 2798,
         "descriptions": [
             "This map has its own unique mod, Restless Dead. Monsters will come back to life 10 seconds after being killed, unless the corpse is removed by the time it would resurrect, for example by being shattered from cold damage, or by removal from using detonate dead/devouring totem/raise zombie etc. Killing the bosses also stops them from resurrecting."
         ],
@@ -2544,8 +2544,8 @@
         "class": "T9 immortal standing",
         "displayName": "Hall of Grandmasters",
         "rating": 2,
-        "top": "1038px",
-        "left": "3565px",
+        "top": 1038,
+        "left": 3565,
         "descriptions": [
             "Instead of containing randomly spawned monsters as in most other maps, the Hall of Grandmasters includes other exiles based on characters of players who purchased a Grandmaster supporter pack. The map consists of a foyer with several large doorways. Between each door is a hall of 50 grandmasters, separated by forcefields so you fight waves of 5 at a time. Currently there are 4 halls (Hall of the Heroes, Hall of the Eternal, Hall of the Fallen, and Hall of the Twisted), making 200 Grandmasters or 40 waves in the map. The waves are randomly[1] organised by approximate difficulty and get progressively harder."
         ],
@@ -2566,8 +2566,8 @@
         "class": "T11 ",
         "displayName": "Perandus Manor",
         "rating": 2,
-        "top": "1276px",
-        "left": "4885px",
+        "top": 1276,
+        "left": 4885,
         "descriptions": [
             "The tileset is based on the Mansion Sections of The Lord's Labyrinth"
         ],
