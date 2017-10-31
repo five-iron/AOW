@@ -23,6 +23,12 @@ function OnMouseDown(event) {
         // Don't drag background, only drag popup (handled by css & main.js)
         return true;
     }
+
+    if(!isCursorOverAtlas(_startX, _startY)) {
+        // Mouse outside of atlas, do nothing
+        return false;
+    }
+
     // Else, we're dragging the map
     document.onmousemove = OnMouseMove;
     _dragObjects = [];
@@ -88,6 +94,15 @@ function isCursorOverMap(xPos, yPos) {
         if(xPos >= rect.left && xPos <= rect.right && yPos >= rect.top && yPos <= rect.bottom) {
             return true;
         }
+    }
+    return false;
+}
+
+// True iff cursor is within entire background img
+function isCursorOverAtlas(xPos, yPos) {
+    let rect = $('#mapImg')[0].getBoundingClientRect();
+    if(xPos >= rect.left && xPos <= rect.right && yPos >= rect.top && yPos <= rect.bottom) {
+        return true;
     }
     return false;
 }
