@@ -95,7 +95,7 @@ function setDisplayByGivenClassNames(classNames, displayVal) {
 
 function resetMapPositionsByMap(maps) {
     maps.forEach(function(map) {
-        let mapDivOffset = $('#mapDiv').offset();
+        let mapDivOffset = $('#mapDiv').position();
         let y = document.getElementById(map.id);
         y.style.top = map.top + mapDivOffset.top + 'px';
         y.style.left = map.left + mapDivOffset.left + 'px';

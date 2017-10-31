@@ -5,9 +5,6 @@ body {
     /* position: relative; */
 }
 
-body {
-}
-
 a {
     text-decoration: none;
     color: antiquewhite;
@@ -20,6 +17,13 @@ img {
     -o-user-drag: none;
     user-drag: none;
     z-index: 0;
+}
+
+.no-scroll {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
 }
 
 .highlighted {
@@ -452,6 +456,6 @@ li {
     font-family: 'Shojumaru', cursive; 
     font-size: 20px;
     left: 0px;
-    bottom: 0px;
+    bottom: 10px;
     position: absolute;
 }
