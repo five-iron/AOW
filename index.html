@@ -24,7 +24,9 @@
         <script id="tier-template" type="text/x-handlebars-template">
             <div class="toggles">
                 {{#each tierBtns}}
-                    <button class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{tierToShow}}')">{{displayName}}</button>
+                    <button class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{tierClass}}')" onmouseenter="highlightParentClass('{{tierClass}}')" onmouseleave="unhighlightParentClass('{{tierClass}}')">
+                        {{displayName}}
+                    </button>
                 {{/each}}
                 <button class="on-top bttn-float bttn-md bttn-default" onclick="hideAll()">Hide all</button>
             </div>
@@ -35,7 +37,7 @@
                 <button class=" on-top bttn-float bttn-md bttn-danger" onclick="toggleClass('mbs')">Multiple bosses</button>
                 <button class="on-top bttn-float bttn-md bttn-royal">Divination card farm</button>
                 {{#each cardBtns}}
-                    <button class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{cardToShow}}')">{{displayName}}</button>
+                    <button class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{cardClass}}')">{{displayName}}</button>
                 {{/each}}
                 <button class="on-top bttn-float bttn-md bttn-default" onclick="hideAll()">Hide all</button>
             </div>
@@ -47,7 +49,7 @@
         <script id="map-template" type="text/x-handlebars-template">
             {{#each maps}}
                 <div class="innerHover ui-draggable ui-draggable-handle" id="{{id}}">
-                    <div draggable="true" class="popupdiv {{class}}" id="{{id}}popup">
+                    <div draggable="true" class="popupdiv on-top {{class}}" id="{{id}}popup">
                         <table align="center" class="ItemGen">
                             <tbody>
                                 <tr>

@@ -12,6 +12,13 @@ let _dragObjects;
 function OnMouseDown(event) {
     _startX = event.clientX;
     _startY = event.clientY;
+    
+    // Disable popups while dragging map
+    let invisibleMapPopups = $('.popupdiv:hidden');
+    invisibleMapPopups.each(function(i, el) {
+        el.style.display = 'none';
+    });
+    
     if(isCursorOverMap(_startX, _startY)) {
         // Don't drag background, only drag popup (handled by jquery ui)
         return true;
@@ -36,12 +43,6 @@ function OnMouseDown(event) {
             offsetTop: el.offsetTop
         });
     }
-    
-    // Disable popups while dragging map
-    let invisibleMapPopups = $('.popupdiv:hidden');
-    invisibleMapPopups.each(function(i, el) {
-        el.style.display = 'none';
-    });
 }
 
 function OnMouseMove(event) {

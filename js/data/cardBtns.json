@@ -1,41 +1,41 @@
 [{
-        "cardToShow": "doc",
+        "cardClass": "doc",
         "displayName": "The Doctor",
         "class": "bttn-danger"
     }, {
-        "cardToShow": "fiend",
+        "cardClass": "fiend",
         "displayName": "The Fiend",
         "class": "bttn-danger"
     }, {
-        "cardToShow": "queen",
+        "cardClass": "queen",
         "displayName": "The Queen",
         "class": "bttn-danger"
     }, {
-        "cardToShow": "hope",
+        "cardClass": "hope",
         "displayName": "Last Hope",
         "class": "bttn-danger"
     }, {
-        "cardToShow": "spark",
+        "cardClass": "spark",
         "displayName": "The Spark and the Flame",
         "class": "bttn-danger"
     }, {
-        "cardToShow": "immortal",
+        "cardClass": "immortal",
         "displayName": "The immortal",
         "class": "bttn-danger"
     }, {
-        "cardToShow": "wealth",
+        "cardClass": "wealth",
         "displayName": "Abandoned Wealth",
         "class": "bttn-success"
     }, {
-        "cardToShow": "standing",
+        "cardClass": "standing",
         "displayName": "The Last One Standing",
         "class": "bttn-success"
     }, {
-        "cardToShow": "bower",
+        "cardClass": "bower",
         "displayName": "Bowyer's Dream",
         "class": "bttn-success"
     }, {
-        "cardToShow": "kaom",
+        "cardClass": "kaom",
         "displayName": "The King's Heart",
         "class": "bttn-success"
     }

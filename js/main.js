@@ -121,8 +121,18 @@ function toggleClass(className) {
     }
 }
 
+function highlightParentClass(className) {
+    $('.' + className).parent().addClass('highlighted');
+}
+
+function unhighlightParentClass(className) {
+    $('.' + className).parent().removeClass('highlighted');
+}
+
 function hideClass(className) {
     setDisplayByGivenClassNames([className], '');
+    let ids = $('.' + className).parent().map((i,v)=>v.id).get()
+    resetMapPositionsById(ids);
 }
 
 function showClass(className) {

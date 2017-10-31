@@ -22,6 +22,10 @@ img {
     z-index: 0;
 }
 
+.highlighted {
+    box-shadow: 0px 0px 30px 5px yellow;
+}
+
 .mapDiv {
     /* cursor: grab; */
     position:absolute;
@@ -183,6 +187,7 @@ img {
 /*POPUP WINDOW SHHIT*/
 
 .popupdiv {
+    position: absolute;
     background: gray;
     width: 200px;
 }
@@ -206,7 +211,7 @@ li {
     width: 27px;
     height: 27px;/**region height*/
     overflow: show;
-    /* border-radius: 80px; */
+    border-radius: 100%;
 }
 
 .innerHover .popupdiv{
