@@ -24,7 +24,7 @@
         <script id="tierBtns-template" type="text/x-handlebars-template">
             <div class="toggles">
                 {{#each tierBtns}}
-                    <button class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{tierClass}}')" onmouseenter="highlightParentClass('{{tierClass}}')" onmouseleave="unhighlightParentClass('{{tierClass}}')">
+                    <button id="{{tierClass}}btn" class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{tierClass}}')" onmouseenter="highlightParentClass('{{tierClass}}')" onmouseleave="unhighlightParentClass('{{tierClass}}')">
                         {{displayName}}
                     </button>
                 {{/each}}
@@ -34,12 +34,12 @@
         <div id="cardBtnsPlaceholder"></div>
         <script id="cardBtns-template" type="text/x-handlebars-template">
             <div class="list">
-                <button class=" on-top bttn-float bttn-md bttn-danger" onclick="toggleClass('mbs')">Multiple bosses</button>
+                <button id="mbsbtn" class=" on-top bttn-float bttn-md bttn-danger" onclick="toggleClass('mbs')">Multiple bosses</button>
                 <button class="on-top bttn-float bttn-md bttn-royal">Divination card farm</button>
                 {{#each cardBtns}}
-                    <button class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{cardClass}}')">{{displayName}}</button>
+                    <button id="{{cardClass}}btn" class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{cardClass}}')">{{displayName}}</button>
                 {{/each}}
-                <button class="on-top bttn-float bttn-md bttn-default" onclick="hideAll()">Hide all</button>
+                <button class="on-top bttn-float bttn-md bttn-default" onclick="toggleShapingTable()">Shaping table</button>
             </div>
         </script>
         <div class="mapDiv grabbable" id="mapDiv">
@@ -147,6 +147,7 @@
         <!-- <div class="footer">
             <h1>This map brought to you by <b>Dufran</b>. <a href="https://blockchain.info/payment_request?address=1Mavxi7gczVsj7fNhYbugv5dKV7Pivwv5Z&amount_local=1&currency=USD&nosavecurrency=true&message=BuyMeaBeer"><img src="img/bmab.png" alt="" height="250px"></a></h1>
         </div> -->
+        <script type="text/javascript" src="js/vendor/cookies_min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/doc.js"></script>

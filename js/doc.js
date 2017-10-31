@@ -20,7 +20,7 @@ function OnMouseDown(event) {
     });
     
     if(isCursorOverMap(_startX, _startY)) {
-        // Don't drag background, only drag popup (handled by jquery ui)
+        // Don't drag background, only drag popup (handled by css & main.js)
         return true;
     }
     // Else, we're dragging the map
@@ -53,7 +53,7 @@ function OnMouseMove(event) {
 }
 
 function OnMouseUp(event) {
-    // Set all *invisible* elements' offsets while dragging. The idea is, update visible elements dynamically, update invisible ones once upon mouseup
+    // Set all *invisible* elements' offsets after dragging. The idea is, update visible elements dynamically, update invisible ones once upon mouseup
     let invisibleMapPopups = $('.popupdiv:hidden');
     let invisisbleMapIds = [];
     for(let el of invisibleMapPopups) {
