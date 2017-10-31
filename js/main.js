@@ -11,32 +11,11 @@ let allTiers = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T1
 // TODO: Make this dynamic if we add zooming
 const SCALE_OFFSET = 0.282; // Multiply by original map offset (i.e. top/left) to get scaled offset
 
-function renderMapsTemplate() {
-    let source = $('#map-template').html();
+function renderTemplate(tplId, dataObj, placeholderId) {
+    let source = $(tplId).html();
     let template = Handlebars.compile(source);
-    let html = template({maps: maps});
-    $(html).appendTo("#mapsPlaceholder");
-}
-
-function renderTierBtnsTemplate() {
-    let source = $('#tier-template').html();
-    let template = Handlebars.compile(source);
-    let html = template({tierBtns: tierBtns});
-    $(html).appendTo("#tierBtnsPlaceholder");
-}
-
-function renderCardBtnsTemplate() {
-    let source = $('#card-template').html();
-    let template = Handlebars.compile(source);
-    let html = template({cardBtns: cardBtns});
-    $(html).appendTo("#cardBtnsPlaceholder");
-}
-
-function renderShapingMapsTemplate() {
-    let source = $('#shapingMaps-template').html();
-    let template = Handlebars.compile(source);
-    let html = template({shapingMaps: shapingMaps});
-    $(html).appendTo("#shapingMapsPlaceholder");
+    let html = template(dataObj);
+    $(html).appendTo(placeholderId);
 }
 
 function makeElementsDraggable() {
@@ -65,7 +44,7 @@ function bindOnClickToElements() {
 
 function initMaps(data) {
     maps = data;
-    renderMapsTemplate();
+    renderTemplate('#map-template', {maps: maps}, '#mapsPlaceholder');
     makeElementsDraggable();
     scaleMapOffsets();
     resetAllPositions();
@@ -74,17 +53,17 @@ function initMaps(data) {
 
 function initTierBtns(data) {
     tierBtns = data;
-    renderTierBtnsTemplate();
+    renderTemplate('#tierBtns-template', {tierBtns: tierBtns}, '#tierBtnsPlaceholder');
 }
 
 function initCardBtns(data) {
     cardBtns = data;
-    renderCardBtnsTemplate();
+    renderTemplate('#cardBtns-template', {cardBtns: cardBtns}, '#cardBtnsPlaceholder');
 }
 
 function initShapingMaps(data) {
     shapingMaps = data;
-    renderShapingMapsTemplate();
+    renderTemplate('#shapingMaps-template', {shapingMaps: shapingMaps}, '#shapingMapsPlaceholder');
 }
 
 function setDisplayByGivenClassNames(classNames, displayVal) {

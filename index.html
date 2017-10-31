@@ -21,7 +21,7 @@
     </head>
     <body class="no-scroll">
         <div id="tierBtnsPlaceholder"></div>
-        <script id="tier-template" type="text/x-handlebars-template">
+        <script id="tierBtns-template" type="text/x-handlebars-template">
             <div class="toggles">
                 {{#each tierBtns}}
                     <button class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{tierClass}}')" onmouseenter="highlightParentClass('{{tierClass}}')" onmouseleave="unhighlightParentClass('{{tierClass}}')">
@@ -32,7 +32,7 @@
             </div>
         </script>
         <div id="cardBtnsPlaceholder"></div>
-        <script id="card-template" type="text/x-handlebars-template">
+        <script id="cardBtns-template" type="text/x-handlebars-template">
             <div class="list">
                 <button class=" on-top bttn-float bttn-md bttn-danger" onclick="toggleClass('mbs')">Multiple bosses</button>
                 <button class="on-top bttn-float bttn-md bttn-royal">Divination card farm</button>
