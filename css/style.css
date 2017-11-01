@@ -2,6 +2,7 @@
 body {
     background-color: black;
     font-family: poefont;
+    margin: 0; /* Set body flush against top left */
     /* position: relative; */
 }
 
