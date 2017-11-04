@@ -78,7 +78,6 @@ function initMaps(data) {
     resetAllPositions();
     bindOnClickToElements();
     createStyleObservers();
-    initShapingTableDisplay();
 }
 
 function initTierBtns(data) {
@@ -94,6 +93,7 @@ function initCardBtns(data) {
 function initShapingMaps(data) {
     shapingMaps = data;
     renderTemplate('#shapingMaps-template', {shapingMaps: shapingMaps}, '#shapingMapsPlaceholder');
+    initShapingTableDisplay();
 }
 
 function setDisplayByGivenClassNames(classNames, displayVal) {
