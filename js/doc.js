@@ -8,12 +8,13 @@ const SCALE_CONSTANT = 1.5; // Scale with respect to window width
 const ZOOM_FACTOR = 1.1; // Amount to multiply/divide per mouse wheel scroll
 let _startX = 0;
 let _startY = 0;
-let currentZoom = 100; // zoom %
-let _dragObjects;
+let currentZoom = 1;
+let _dragObjects = [];
 
 function OnMouseDown(event) {
     _startX = event.clientX;
     _startY = event.clientY;
+    _dragObjects = [];
     
     // Disable popups while dragging map
     let invisibleMapPopups = $('.popupdiv:hidden');
@@ -33,7 +34,6 @@ function OnMouseDown(event) {
 
     // Else, we're dragging the map
     document.onmousemove = OnMouseMove;
-    _dragObjects = [];
     // Track the map
     let mapEl = document.getElementById('mapDiv');
     _dragObjects.push({
@@ -62,51 +62,45 @@ function OnMouseMove(event) {
 
 function OnMouseUp(event) {
     // Set all *invisible* elements' offsets after dragging. The idea is, update visible elements dynamically, update invisible ones once upon mouseup
-    let invisibleMapPopups = $('.popupdiv:hidden');
-    let invisisbleMapIds = [];
-    for(let el of invisibleMapPopups) {
-        invisisbleMapIds.push(el.parentElement.id);
+    resetHiddenMapPositions();
+    // Set hidden map style back to '' from 'none'
+    $('.popupdiv:hidden').each(function(i, el) {
         el.style.display = '';
-    }
-    
-    resetMapPositionsById(invisisbleMapIds);
+    });
     document.onmousemove = null;
     _dragObjects = [];
 }
 
 function OnWheel(event) {
-    // Calculate new zoom. Zoom is uniform accross all applicable elements
+    // Calculate new zoom. Currently zoom is uniform accross all applicable elements
     let newZoom;
-    // let newOffset;
     if(event.deltaY > 0) { // scroll down to zoom out
         newZoom = (currentZoom / ZOOM_FACTOR);
     } else if(event.deltaY < 0) { // scroll up to zoom in
         newZoom = (currentZoom * ZOOM_FACTOR);
     }
-    currentZoom = newZoom;
-    // Zoom atlas and all nodes
+    
     $('#mapDiv,.innerHover').each(function(i, elToZoom) {
-        if(!elToZoom.style.zoom) {
-            elToZoom.style.zoom = '100%';
-        }
-        // TODO: Figure out offset while zooming, so it zooms into the cursor instead of the top left
-        // let currentOffset = {
-            // left: elToZoom.style.left.replace(/px/g,''),
-            // top: elToZoom.style.top.replace(/px/g,'')
-        // }
-        // let mapDivOffset = $('#mapDiv').position();
-        // let mouseOffset = {
-            // left: event.clientX + mapDivOffset.left,
-            // top: event.clientY + mapDivOffset.top
-        // }
-        // newOffset = {
-            // left: currentOffset.left - (mouseOffset.left * (newZoom - currentZoom) * .01),
-            // top: currentOffset.top - (mouseOffset.right * (newZoom - currentZoom) * .01)
-        // }
-        elToZoom.style.zoom = newZoom + '%';
-        // elToZoom.style.left = newOffset.left + 'px';
-        // elToZoom.style.top = newOffset.top + 'px';
+        // TODO: See about setting a max/min zoom on elements
+        elToZoom.style.transform = 'scale(' + newZoom + ')';
     });
+    
+    let zoomAmt = newZoom / currentZoom;
+    // Translate visible elements and the atlas
+    // Select popupdiv parent since the popup knows about visibility but the parent controls offset
+    $('.popupdiv:visible').parent().add('#mapDiv').each(function(i, el) {
+        // Get our mouse position relative to element offset
+        let mouseOffset = {
+            left: (event.clientX - el.offsetLeft),
+            top: (event.clientY - el.offsetTop)
+        };
+        // Offset the element so it appears that we're zooming about the cursor position
+        el.style.left = (el.offsetLeft + (mouseOffset.left - mouseOffset.left * zoomAmt)) + 'px';
+        el.style.top = (el.offsetTop + (mouseOffset.top - mouseOffset.top * zoomAmt)) + 'px';
+    });
+    currentZoom = newZoom;
+    // Put hidden map nodes in their new place
+    resetHiddenMapPositions();
     return false;
 }
 
@@ -115,14 +109,14 @@ function isCursorOverMap(xPos, yPos) {
     let visibleMapPopups = $('.popupdiv:visible');
     for(let el of visibleMapPopups) {
         let rect = el.getBoundingClientRect();
-        if(insideZoomedRect(rect, xPos, yPos)) {
+        if(insideRect(rect, xPos, yPos)) {
             return true;
         }
     }
     // Else, check all map nodes (non-popups)
     for(let map of maps) {
         let rect = $('#' + map.id)[0].getBoundingClientRect();
-        if(insideZoomedRect(rect, xPos, yPos)) {
+        if(insideRect(rect, xPos, yPos)) {
             return true;
         }
     }
@@ -132,19 +126,14 @@ function isCursorOverMap(xPos, yPos) {
 // True iff cursor is within entire background img
 function isCursorOverAtlas(xPos, yPos) {
     let rect = $('#mapImg')[0].getBoundingClientRect();
-    if(insideZoomedRect(rect, xPos, yPos)) {
+    if(insideRect(rect, xPos, yPos)) {
         return true;
     }
     return false;
 }
 
-// Multiply rect boundries by currentZoom, then check if x,y are inside
-function insideZoomedRect(rect, xPos, yPos) {
-    let left = rect.left * (currentZoom / 100);
-    let right = rect.right * (currentZoom / 100);
-    let top = rect.top * (currentZoom / 100);
-    let bottom = rect.bottom * (currentZoom / 100);
-    return xPos >= left && xPos <= right && yPos >= top && yPos <= bottom;
+function insideRect(rect, xPos, yPos) {
+    return xPos >= rect.left && xPos <= rect.right && yPos >= rect.top && yPos <= rect.bottom;
 }
 
 

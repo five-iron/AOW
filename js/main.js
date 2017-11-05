@@ -8,7 +8,7 @@ let shapingMaps = [];
 
 let allTiers = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16"];
 
-// TODO: Make this dynamic if we add zooming
+// Some magic number
 const SCALE_OFFSET = 0.282; // Multiply by original map offset (i.e. top/left) to get scaled offset
 
 function renderTemplate(tplId, dataObj, placeholderId) {
@@ -56,8 +56,6 @@ function createStyleObservers() {
     $('[id$=popup]').each(function(i, el) {
         observer.observe(el, {
             attributeOldValue: true
-            // ,
-            // attributes: true
         });
     });
 }
@@ -78,6 +76,8 @@ function initMaps(data) {
     resetAllPositions();
     bindOnClickToElements();
     createStyleObservers();
+    // Initialize mapDiv style
+    $('#mapDiv').css({top: '0px', left: '0px'});
 }
 
 function initTierBtns(data) {
@@ -106,13 +106,23 @@ function resetMapPositionsByMap(maps) {
     maps.forEach(function(map) {
         let mapDivOffset = $('#mapDiv').position();
         let y = document.getElementById(map.id);
-        y.style.top = map.top + mapDivOffset.top + 'px';
-        y.style.left = map.left + mapDivOffset.left + 'px';
+        y.style.top = map.top * currentZoom + mapDivOffset.top + 'px';
+        y.style.left = map.left * currentZoom + mapDivOffset.left + 'px';
     });
 }
 
 function resetMapPositionsById(ids) {
     resetMapPositionsByMap(getMapsWithIds(ids));
+}
+
+function resetHiddenMapPositions() {
+    let invisibleMapPopups = $('.popupdiv:hidden');
+    let invisisbleMapIds = [];
+    for(let el of invisibleMapPopups) {
+        invisisbleMapIds.push(el.parentElement.id);
+    }
+    
+    resetMapPositionsById(invisisbleMapIds);
 }
 
 function showMap(event) {
@@ -125,6 +135,7 @@ function toggleShapingTable() {
     let shown = toggleClass('shapingmaps');
     docCookies.setItem('shapingTableShown', shown);
 }
+
 function toggleClass(className) {
     let displayValues = $('.' + className).map((i,el)=>el.style.display);
     // If any invisible, show all

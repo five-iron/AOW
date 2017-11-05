@@ -34,7 +34,10 @@ img {
 .mapDiv {
     /* cursor: grab; */
     position:absolute;
+    left: 0px;
     top: 0px;
+    transform: scale(1);
+    transform-origin: 0 0;
 }
 
 /* TODO: Set cursor to 'grabbing' (closed hand) while dragging */
@@ -217,6 +220,8 @@ li {
     height: 27px;/**region height*/
     overflow: show;
     border-radius: 100%;
+    transform: scale(1);
+    transform-origin: 0 0;
 }
 
 .innerHover .popupdiv{
