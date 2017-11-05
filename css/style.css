@@ -393,9 +393,7 @@ button {
 /*Shaping maps */
 
 .shapingmaps {
-    /* TODO: Less hacky positioning */
     position: absolute;
-    bottom: 70px;
     display: none;
 }
 

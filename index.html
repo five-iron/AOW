@@ -40,6 +40,7 @@
                     <button id="{{cardClass}}btn" class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{cardClass}}')">{{displayName}}</button>
                 {{/each}}
                 <button class="on-top bttn-float bttn-md bttn-default" onclick="toggleShapingTable()">Shaping table</button>
+                <div id="shapingMapsPlaceholder"></div>
             </div>
         </script>
         <div class="mapDiv grabbable" id="mapDiv">
@@ -114,7 +115,6 @@
                 </div>
             {{/each}}
         </script>
-        <div id="shapingMapsPlaceholder"></div>
         <script id="shapingMaps-template" type="text/x-handlebars-template">
             <div class="shapingmaps on-top">
                 <table>
