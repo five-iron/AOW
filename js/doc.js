@@ -10,7 +10,6 @@ let _startX = 0;
 let _startY = 0;
 let currentZoom = 1;
 let _dragObjects = [];
-
 function OnMouseDown(event) {
     _startX = event.clientX;
     _startY = event.clientY;
@@ -109,14 +108,14 @@ function isCursorOverMap(xPos, yPos) {
     let visibleMapPopups = $('.popupdiv:visible');
     for(let el of visibleMapPopups) {
         let rect = el.getBoundingClientRect();
-        if(insideRect(rect, xPos, yPos)) {
+        if(isInsideRect(rect, xPos, yPos)) {
             return true;
         }
     }
     // Else, check all map nodes (non-popups)
     for(let map of maps) {
         let rect = $('#' + map.id)[0].getBoundingClientRect();
-        if(insideRect(rect, xPos, yPos)) {
+        if(isInsideRect(rect, xPos, yPos)) {
             return true;
         }
     }
@@ -126,32 +125,46 @@ function isCursorOverMap(xPos, yPos) {
 // True iff cursor is within entire background img
 function isCursorOverAtlas(xPos, yPos) {
     let rect = $('#mapImg')[0].getBoundingClientRect();
-    if(insideRect(rect, xPos, yPos)) {
+    if(isInsideRect(rect, xPos, yPos)) {
         return true;
     }
     return false;
 }
 
-function insideRect(rect, xPos, yPos) {
+function isInsideRect(rect, xPos, yPos) {
     return xPos >= rect.left && xPos <= rect.right && yPos >= rect.top && yPos <= rect.bottom;
 }
 
-
-function init() {
-    let img = document.getElementById('mapImg');
+function initDocEvents() {
     document.onmousedown = OnMouseDown;
     document.onmouseup = OnMouseUp;
     document.onwheel = OnWheel;
+}
+
+function initScaling() {
+    let mapImg = $("#mapImg");
+    let initialMapWidth = mapImg.width();
     
-    $("#mapImg").css({
+    mapImg.css({
         width: window.innerWidth * SCALE_CONSTANT,
         height: 'auto'
     });
     
+    let postScaleMapWidth = mapImg.width();
+    
+    // Match mapDiv width to mapImg width
     $("#mapDiv").css({
-        width: img.width,
+        width: postScaleMapWidth,
         height: 'auto'
     });
+    
+    let scaleRatio = postScaleMapWidth / initialMapWidth;
+    return scaleRatio;
 }
 
-$(init());
+// Only set map node offsets after scaling the atlas
+let scalePromise = new Promise(function(resolve) {
+    $(() => resolve(initScaling()));
+});
+
+$(initDocEvents);

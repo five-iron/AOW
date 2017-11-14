@@ -216,6 +216,7 @@ li {
 
 .innerHover {
     position: absolute;
+    /* TODO: Make height/width based off initial scale */
     width: 27px;
     height: 27px;/**region height*/
     overflow: show;

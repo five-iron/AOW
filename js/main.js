@@ -8,9 +8,6 @@ let shapingMaps = [];
 
 let allTiers = ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "T13", "T14", "T15", "T16"];
 
-// Some magic number
-const SCALE_OFFSET = 0.282; // Multiply by original map offset (i.e. top/left) to get scaled offset
-
 function renderTemplate(tplId, dataObj, placeholderId) {
     let source = $(tplId).html();
     let template = Handlebars.compile(source);
@@ -24,11 +21,12 @@ function makeElementsDraggable() {
     $(idSelectors.join(',')).draggable({ scroll: true });
 }
 
-function scaleMapOffsets() {
+function scaleMapOffsets(scaleRatio) {
     maps.forEach(function(map) {
-        map.top = map.top * SCALE_OFFSET;
-        map.left = map.left * SCALE_OFFSET;
+        map.top = map.top * scaleRatio;
+        map.left = map.left * scaleRatio;
     });
+    resetAllPositions();
 }
 
 function resetAllPositions() {
@@ -72,8 +70,7 @@ function initMaps(data) {
     maps = data;
     renderTemplate('#map-template', {maps: maps}, '#mapsPlaceholder');
     makeElementsDraggable();
-    scaleMapOffsets();
-    resetAllPositions();
+    scalePromise.then(scaleMapOffsets);
     bindOnClickToElements();
     createStyleObservers();
     // Initialize mapDiv style
@@ -93,7 +90,7 @@ function initCardBtns(data) {
 function initShapingMaps(data) {
     shapingMaps = data;
     renderTemplate('#shapingMaps-template', {shapingMaps: shapingMaps}, '#shapingMapsPlaceholder');
-    initShapingTableDisplay();
+    $(initShapingTableDisplay);
 }
 
 function setDisplayByGivenClassNames(classNames, displayVal) {
@@ -190,7 +187,9 @@ function getMapsWithIds(ids) {
     return maps.filter((map) => ids.includes(map.id));
 }
 
-$.getJSON("js/data/maps.json", (data) => initMaps(data));
-$.getJSON("js/data/tierBtns.json", (data) => initTierBtns(data));
-$.getJSON("js/data/cardBtns.json", (data) => initCardBtns(data));
-$.getJSON("js/data/shapingMaps.json", (data) => initShapingMaps(data));
+$(function() {
+    $.getJSON("js/data/maps.json", (data) => initMaps(data));
+    $.getJSON("js/data/tierBtns.json", (data) => initTierBtns(data));
+    $.getJSON("js/data/cardBtns.json", (data) => initCardBtns(data));
+    $.getJSON("js/data/shapingMaps.json", (data) => initShapingMaps(data));
+});
