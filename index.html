@@ -31,17 +31,17 @@
                 <button class="on-top bttn-float bttn-md bttn-default" onclick="hideAll()">Hide all</button>
             </div>
         </script>
-        <div id="cardBtnsPlaceholder"></div>
+        <div class="list">
+            <div id="cardBtnsPlaceholder"></div>
+            <div id="shapingMapsPlaceholder"></div>
+        </div>
         <script id="cardBtns-template" type="text/x-handlebars-template">
-            <div class="list">
-                <button id="mbsbtn" class=" on-top bttn-float bttn-md bttn-danger" onclick="toggleClass('mbs')">Multiple bosses</button>
-                <button class="on-top bttn-float bttn-md bttn-royal">Divination card farm</button>
-                {{#each cardBtns}}
-                    <button id="{{cardClass}}btn" class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{cardClass}}')">{{displayName}}</button>
-                {{/each}}
-                <button class="on-top bttn-float bttn-md bttn-default" onclick="toggleShapingTable()">Shaping table</button>
-                <div id="shapingMapsPlaceholder"></div>
-            </div>
+            <button id="mbsbtn" class=" on-top bttn-float bttn-md bttn-danger" onclick="toggleClass('mbs')">Multiple bosses</button>
+            <button class="on-top bttn-float bttn-md bttn-royal">Divination card farm</button>
+            {{#each cardBtns}}
+                <button id="{{cardClass}}btn" class="on-top bttn-float bttn-md {{class}}" onclick="toggleClass('{{cardClass}}')">{{displayName}}</button>
+            {{/each}}
+            <button class="on-top bttn-float bttn-md bttn-default" onclick="toggleShapingTable()">Shaping table</button>
         </script>
         <div class="mapDiv grabbable" id="mapDiv">
             <img id="mapImg" class="selectDisable" ondragstart="return false;" src='img/AOW3.jpg'></img>

@@ -90,7 +90,7 @@ function initCardBtns(data) {
 function initShapingMaps(data) {
     shapingMaps = data;
     renderTemplate('#shapingMaps-template', {shapingMaps: shapingMaps}, '#shapingMapsPlaceholder');
-    $(initShapingTableDisplay);
+    initShapingTableDisplay();
 }
 
 function setDisplayByGivenClassNames(classNames, displayVal) {
