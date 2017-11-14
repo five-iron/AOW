@@ -164,7 +164,9 @@ function initScaling() {
 
 // Only set map node offsets after scaling the atlas
 let scalePromise = new Promise(function(resolve) {
-    $(() => resolve(initScaling()));
+    $("#mapImg").on('load', function() {
+        resolve(initScaling());
+    });
 });
 
 $(initDocEvents);
